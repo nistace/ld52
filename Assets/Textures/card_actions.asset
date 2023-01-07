@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d02f40abe649e9a48c9506dba40c95, type: 3}
+  m_Name: card_actions
+  m_EditorClassIdentifier: 
+  _operation: 0
+  _pattern: layer.tag.frame
+  _texture: {fileID: 2800000, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  _json: {fileID: 4900000, guid: d12166298a2d7e34ebc3155dd35b22ec, type: 3}
+  _pixelsPerSprite: 16
+  _defaultPivot: {x: 0.5, y: 0.5}
+  _layerPivots: []
+  _sprites:
+  - {fileID: 388278829763199254, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  - {fileID: 1188956230784305134, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  - {fileID: -8125001192094295833, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  - {fileID: -7500499736823836689, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  - {fileID: 7686374370980120400, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  - {fileID: -2755206461897773256, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  - {fileID: 0, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  - {fileID: -6413195454701273516, guid: 0a6241ea5078b10458447397d36654a5, type: 3}
+  - {fileID: 2392634596010458986, guid: 0a6241ea5078b10458447397d36654a5, type: 3}

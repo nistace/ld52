@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c629d6e5b934b65b5dc578cfa24578b, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: 
+  _displayName: Water
+  _iconName: water
+  _action: 1
+  _target: 2
+  _attackMultiplier: 0
+  _constantStrength: 3
+  _manaCost: 1
+  _description: 
+  _level: 1
+  _attributeBonus:
+    _attribute: 2
+    _value: 1

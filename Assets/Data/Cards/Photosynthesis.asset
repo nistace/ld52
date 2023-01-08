@@ -12,15 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c629d6e5b934b65b5dc578cfa24578b, type: 3}
   m_Name: Photosynthesis
   m_EditorClassIdentifier: 
-  _displayName: Head-butt
+  _displayName: Photosynthesis
   _iconName: photosynthesis
+  _description: Vegetable way of showing off.
   _action: 1
+  _additionModifiers: 0
+  _removedModifiers: 0
   _target: 4
-  _attackMultiplier: 0
+  _attribute: 1
+  _attributeMultiplier: 0
   _constantStrength: 2
-  _manaCost: 2
-  _description: 
   _level: 1
   _attributeBonus:
     _attribute: 2
     _value: 1
+  _manaCost: 2
+  _targetMustBeAlive: 1
+  _requiredModifiers: 0
+  _forbiddenModifiers: 1

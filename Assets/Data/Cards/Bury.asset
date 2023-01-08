@@ -14,13 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _displayName: Bury
   _iconName: bury
-  _action: 3
-  _target: 0
-  _attackMultiplier: 0
-  _constantStrength: 0
-  _manaCost: 0
   _description: 
+  _action: 1
+  _additionModifiers: 1
+  _removedModifiers: 0
+  _target: 0
+  _attribute: 1
+  _attributeMultiplier: 0
+  _constantStrength: 0
   _level: 1
   _attributeBonus:
     _attribute: 0
     _value: 1
+  _manaCost: 0
+  _targetMustBeAlive: 1
+  _requiredModifiers: 0
+  _forbiddenModifiers: 1

@@ -14,13 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _displayName: Flick
   _iconName: flick
+  _description: They'll be defeated, bit by bit.
   _action: 0
+  _additionModifiers: 0
+  _removedModifiers: 0
   _target: 5
-  _attackMultiplier: 0
+  _attribute: 1
+  _attributeMultiplier: 0
   _constantStrength: 1
-  _manaCost: 0
-  _description: 
   _level: 0
   _attributeBonus:
     _attribute: 1
     _value: 0
+  _manaCost: 0
+  _targetMustBeAlive: 1
+  _requiredModifiers: 0
+  _forbiddenModifiers: 1

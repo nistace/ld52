@@ -1,9 +1,9 @@
 ﻿namespace LD52.Data.Cards {
 	public enum CardAction {
-		Attack,
-		Heal,
-		Protect,
-		Bury,
-		GetMana
+		Attack    = 0,
+		Heal      = 1,
+		Protect   = 2,
+		GetMana   = 3,
+		LifeSteal = 4,
 	}
 }

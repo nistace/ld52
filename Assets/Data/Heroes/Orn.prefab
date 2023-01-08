@@ -46,12 +46,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _character: {fileID: 0}
+  _defaultCards:
+  - {fileID: 11400000, guid: 589cb16e1872742429537f07265a8ff0, type: 2}
+  - {fileID: 11400000, guid: 589cb16e1872742429537f07265a8ff0, type: 2}
+  - {fileID: 11400000, guid: 589cb16e1872742429537f07265a8ff0, type: 2}
+  - {fileID: 11400000, guid: fa2860f7503a4464ba17511e8f29b993, type: 2}
+  - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
+  - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
+  - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
+  - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
   _deck:
     _cards:
+    - {fileID: 11400000, guid: 589cb16e1872742429537f07265a8ff0, type: 2}
+    - {fileID: 11400000, guid: 589cb16e1872742429537f07265a8ff0, type: 2}
+    - {fileID: 11400000, guid: 589cb16e1872742429537f07265a8ff0, type: 2}
     - {fileID: 11400000, guid: be06c14b77d63c74e8c5ddb504326099, type: 2}
-    - {fileID: 11400000, guid: 536aa3fb14a7c254aade76b9ff1582b3, type: 2}
-    - {fileID: 11400000, guid: 6dcd4be4e1d06224d8d5243fa9319076, type: 2}
-    - {fileID: 11400000, guid: be06c14b77d63c74e8c5ddb504326099, type: 2}
+    - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
+    - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
     - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
     - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
     _stack: []
@@ -72,7 +83,8 @@ MonoBehaviour:
   _portraitName: Orn
   _displayName: Orn
   _attributeSet:
-    _values: 040000000100000001000000
+    _values: 040000000000000002000000
+  _characterModifiers: 0
   _health: 0
   _armor: 0
   _mana: 0

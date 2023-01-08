@@ -45,12 +45,12 @@ namespace LD52.Data.Games {
 
 		public HeroUi GetHeroUi(Hero hero) => uiPerHero.ContainsKey(hero) ? uiPerHero[hero] : null;
 
-		public void ShowCardBeingPlayedWithConfirm(Card card) => _playingCardUi.Show(card, BattlePlayingCardUi.ExpectedAction.ConfirmOrCancel);
+		public void ShowCardBeingPlayedWithConfirm(Card card, GenericCharacter caster) => _playingCardUi.Show(card, caster, BattlePlayingCardUi.ExpectedAction.ConfirmOrCancel);
 
-		public void ShowCardBeingPlayedCancelOnly(Card card, string message) => _playingCardUi.Show(card, BattlePlayingCardUi.ExpectedAction.CancelOnly, message);
+		public void ShowCardBeingPlayedCancelOnly(Card card, GenericCharacter caster, string message) => _playingCardUi.Show(card, caster, BattlePlayingCardUi.ExpectedAction.CancelOnly, message);
 
-		public void ShowCardBeingPlayedWithTargets(Card card, string message, IEnumerable<GenericCharacter> acceptedTargets) {
-			_playingCardUi.Show(card, BattlePlayingCardUi.ExpectedAction.SelectTargetOrCancel, message);
+		public void ShowCardBeingPlayedWithTargets(Card card, GenericCharacter caster, string message, IEnumerable<GenericCharacter> acceptedTargets) {
+			_playingCardUi.Show(card, caster, BattlePlayingCardUi.ExpectedAction.SelectTargetOrCancel, message);
 			uiPerHero.Where(t => acceptedTargets.Contains(t.Key.character)).ForEach(t => t.Value.targetSelection.enabled = true);
 			uiPerOpponent.Where(t => acceptedTargets.Contains(t.Key.character)).ForEach(t => t.Value.targetSelection.enabled = true);
 		}

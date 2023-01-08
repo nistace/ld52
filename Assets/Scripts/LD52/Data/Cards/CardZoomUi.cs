@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using LD52.Assets;
 using UnityEngine;
 using Utils.Extensions;
 
@@ -12,8 +11,8 @@ namespace LD52.Data.Cards {
 			set => instance.enabled = value;
 		}
 
-		[SerializeField] protected Card       _hoveredCard;
-		[SerializeField] protected FullCardUi _cardUi;
+		[SerializeField] protected SimpleCardUi _hoveredCard;
+		[SerializeField] protected FullCardUi   _cardUi;
 
 		private void Start() {
 			instance = this;
@@ -22,14 +21,14 @@ namespace LD52.Data.Cards {
 			instanceEnabled = false;
 		}
 
-		private void HandleCardOver(Card card) {
+		private void HandleCardOver(SimpleCardUi card) {
 			_hoveredCard = card;
 			StopAllCoroutines();
 			StartCoroutine(ShowCard());
 		}
 
-		private void HandleCardStopOver(Card card) {
-			if (card != _hoveredCard) return;
+		private void HandleCardStopOver(SimpleCardUi card) {
+			if (_hoveredCard != card) return;
 			_hoveredCard = null;
 		}
 
@@ -40,7 +39,7 @@ namespace LD52.Data.Cards {
 
 		private IEnumerator ShowCard() {
 			if (!_hoveredCard) yield break;
-			_cardUi.Set(_hoveredCard);
+			_cardUi.Set(_hoveredCard.card, _hoveredCard.cardOwner);
 			_cardUi.gameObject.SetActive(true);
 
 			while (_hoveredCard) {

@@ -55,6 +55,15 @@ namespace LD52.Scenes.GameScene {
 			}
 
 			foreach (var hero in game.playerHeroes) {
+				hero.character.RefreshModifiersForNewTurn();
+			}
+
+			foreach (var opponent in game.opponentTeam.opponents.Where(t => !t.character.dead)) {
+				opponent.SetTargetsForUpcomingAction(CardEffectManager.SelectTargetsForUpcomingAction(game, opponent));
+				yield return new WaitForSeconds(.3f);
+			}
+
+			foreach (var hero in game.playerHeroes.Where(t => !t.character.dead)) {
 				hero.deck.DrawNext();
 				hero.deck.DrawNext();
 				waitCoroutine = CoroutineRunner.Run(ui.battle.GetHeroUi(hero).DrawCards(hero.deck.drawnCards));
@@ -87,11 +96,21 @@ namespace LD52.Scenes.GameScene {
 				yield return new WaitForSeconds(.5f);
 			}
 
-			// TODO play opponent turn;
+			game.opponentTeam.opponents.ForEach(t => t.character.RefreshModifiersForNewTurn());
 
-			yield return new WaitForSeconds(2);
+			foreach (var opponent in game.opponentTeam.opponents.Where(opponent => !opponent.character.dead)) {
+				yield return CoroutineRunner.Run(CardEffectManager.PlayEffect(game, opponent));
+				opponent.SetActionAsDone();
+				if (IsGameOver()) {
+					CoroutineRunner.Run(PlayOutro());
+					yield break;
+				}
+			}
 
-			yield return CoroutineRunner.Run(StartTurn());
+			yield return new WaitForSeconds(1);
+
+			foreach (var opponent in game.opponentTeam.opponents.Where(opponent => !opponent.character.dead)) opponent.PrepareNextAction();
+			CoroutineRunner.Run(StartTurn());
 		}
 
 		private void HandleHeroCardClicked(Hero hero, int cardIndex) {
@@ -101,8 +120,8 @@ namespace LD52.Scenes.GameScene {
 			selectedCardHero = hero;
 			selectedCard = selectedCardHero.deck.drawnCards[cardIndex];
 
-			if (!CardEffectManager.CheckCardCanBePlayed(game, selectedCard, selectedCardHero, out var reason)) {
-				ui.battle.ShowCardBeingPlayedCancelOnly(selectedCard, reason switch {
+			if (!CardEffectManager.CheckCardCanBePlayed(game, selectedCard, selectedCardHero.character, out var reason)) {
+				ui.battle.ShowCardBeingPlayedCancelOnly(selectedCard, selectedCardHero.character, reason switch {
 					CardEffectManager.CannotPlayReason.None          => "Cannot play this card",
 					CardEffectManager.CannotPlayReason.NotEnoughMana => "Not enough mana",
 					CardEffectManager.CannotPlayReason.CasterDead    => "Dead hero",
@@ -111,11 +130,12 @@ namespace LD52.Scenes.GameScene {
 				});
 			}
 			else if (CardEffectManager.IsTargetSelectionRequired(game, selectedCard, selectedCardHero, out var candidates)) {
-				ui.battle.ShowCardBeingPlayedWithTargets(selectedCard, "Select target", candidates);
+				ui.battle.ShowCardBeingPlayedWithTargets(selectedCard, selectedCardHero.character, "Select target", candidates);
+				// TODO Show the targets. Give some effect on hover
 				TargetSelectionUi.onAnyClicked.AddListenerOnce(HandleTargetSelected);
 			}
 			else {
-				ui.battle.ShowCardBeingPlayedWithConfirm(selectedCard);
+				ui.battle.ShowCardBeingPlayedWithConfirm(selectedCard, selectedCardHero.character);
 				ui.battle.onPlayingCardConfirmed.AddListenerOnce(HandlePlayingCardConfirmed);
 			}
 			ui.battle.onPlayingCardCancelled.AddListenerOnce(HandlePlayingCardCancelled);
@@ -163,7 +183,7 @@ namespace LD52.Scenes.GameScene {
 
 		private void HandlePlayingCardCancelled() {
 			HidePlayingCard();
-			HeroUi.onDrawnCardClicked.AddListenerOnce(HandleHeroCardClicked);
+			ResumePlayerTurn();
 		}
 
 		protected override void Disable() { }

@@ -14,13 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _displayName: Serenity
   _iconName: serenity
-  _action: 4
-  _target: 0
-  _attackMultiplier: 0
-  _constantStrength: 2
-  _manaCost: 0
   _description: 
-  _level: 1
+  _action: 3
+  _additionModifiers: 0
+  _removedModifiers: 0
+  _target: 0
+  _attribute: 2
+  _attributeMultiplier: 1
+  _constantStrength: 0
+  _level: 2
   _attributeBonus:
     _attribute: 2
     _value: 1
+  _manaCost: 0
+  _targetMustBeAlive: 1
+  _requiredModifiers: 0
+  _forbiddenModifiers: 1

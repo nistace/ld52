@@ -46,7 +46,7 @@ namespace LD52.Data.Characters.Heroes {
 				_optionCards[i].transform.offsetMax = Vector2.zero;
 			}
 			_discardTopCard.gameObject.SetActive(_hero.TryPeekTopOfDiscard(out var topOfDiscard));
-			_discardTopCard.SetCard(topOfDiscard);
+			_discardTopCard.Set(topOfDiscard, hero.character);
 			_barUi.Set(hero.character);
 			targetSelection.character = hero.character;
 		}
@@ -72,7 +72,8 @@ namespace LD52.Data.Characters.Heroes {
 
 		public IEnumerator DrawCards(IReadOnlyList<Card> cards) {
 			for (var i = 0; i < cards.Count; ++i) {
-				_optionCards[i].SetCard(cards[i]);
+				_optionCards[i].Set(cards[i], hero.character);
+				_optionCards[i].color = Color.white;
 				_optionCards[i].transform.SetParent(_stackCardParent);
 				_optionCards[i].transform.anchorMin = Vector2.zero;
 				_optionCards[i].transform.anchorMax = Vector2.one;
@@ -104,6 +105,7 @@ namespace LD52.Data.Characters.Heroes {
 				card.transform.SetParent(_discardCardParent);
 				card.transform.anchorMin = Vector2.zero;
 				card.transform.anchorMax = Vector2.one;
+				card.color = Color.gray;
 			}
 
 			yield return null;
@@ -116,7 +118,7 @@ namespace LD52.Data.Characters.Heroes {
 			}
 
 			_discardTopCard.gameObject.SetActive(true);
-			_discardTopCard.SetCard(_optionCards[^1].card);
+			_discardTopCard.Set(_optionCards[^1].card, hero.character);
 		}
 
 		private void Update() {

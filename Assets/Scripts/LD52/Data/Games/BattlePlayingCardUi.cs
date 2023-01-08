@@ -1,4 +1,5 @@
 ﻿using LD52.Data.Cards;
+using LD52.Data.Characters;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -20,8 +21,8 @@ namespace LD52.Data.Games {
 		public UnityEvent onConfirmClicked => _confirmButton.onClick;
 		public UnityEvent onCancelClicked  => _cancelButton.onClick;
 
-		public void Show(Card card, ExpectedAction expectedAction, string message = null) {
-			_cardUi.Set(card);
+		public void Show(Card card, GenericCharacter caster, ExpectedAction expectedAction, string message = null) {
+			_cardUi.Set(card, caster);
 			_cardUi.gameObject.SetActive(true);
 			_confirmButton.gameObject.SetActive(expectedAction == ExpectedAction.ConfirmOrCancel);
 			_messageLabel.text = message ?? string.Empty;

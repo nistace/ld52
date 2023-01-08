@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _card: {fileID: 0}
+  _backgroundImage: {fileID: 1102147246455080119}
   _cardImage: {fileID: 9080607318258514989}
 --- !u!1 &1929695452790869753
 GameObject:

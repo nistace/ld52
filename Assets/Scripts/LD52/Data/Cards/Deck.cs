@@ -11,6 +11,7 @@ namespace LD52.Data.Cards {
 		[SerializeField] protected List<Card> _drawn          = new List<Card>();
 		[SerializeField] protected List<Card> _discardedCards = new List<Card>();
 
+		public IReadOnlyList<Card> allCards    => _cards;
 		public int                 stackSize   => _stack.Count;
 		public int                 discardSize => _discardedCards.Count;
 		public int                 drawnSize   => _drawn.Count;
@@ -35,6 +36,11 @@ namespace LD52.Data.Cards {
 			_stack.Clear();
 			_stack.AddRange(_cards);
 			_stack.Shuffle();
+		}
+
+		public void Initialize(IEnumerable<Card> firstCards) {
+			_cards.Clear();
+			_cards.AddRange(firstCards);
 		}
 
 		public void ReplaceCard(int index, Card newCard) => _cards[index] = newCard;

@@ -25,14 +25,11 @@ MonoBehaviour:
   - _startWithHeroInventory: 1
     _opponentPrefabs:
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
-    - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
-    - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
+    - {fileID: 8798241365555037537, guid: a68e2c49834c5b54c8fcd248a379a9f2, type: 3}
     _reward: 1
   - _startWithHeroInventory: 1
     _opponentPrefabs:
-    - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
-    - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
-    - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
-    - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
-    - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
+    - {fileID: 8798241365555037537, guid: b85771eee38ea33479d776b288f44bfd, type: 3}
+    - {fileID: 8798241365555037537, guid: c0eec097cfe720b4e964c21d1b802dc9, type: 3}
+    - {fileID: 8798241365555037537, guid: a68e2c49834c5b54c8fcd248a379a9f2, type: 3}
     _reward: 0

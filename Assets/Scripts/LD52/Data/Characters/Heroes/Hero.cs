@@ -1,3 +1,4 @@
+using System;
 using LD52.Data.Cards;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,6 +7,7 @@ namespace LD52.Data.Characters.Heroes {
 	[RequireComponent(typeof(GenericCharacter))]
 	public class Hero : MonoBehaviour {
 		[SerializeField] protected GenericCharacter _character;
+		[SerializeField] protected Card[]           _defaultCards;
 		[SerializeField] protected Deck             _deck = new Deck();
 
 		public GenericCharacter character   => _character ? _character : GetComponent<GenericCharacter>();
@@ -20,6 +22,13 @@ namespace LD52.Data.Characters.Heroes {
 		public UnityEvent onHealthChanged => character.onHealthChanged;
 		public UnityEvent onArmorChanged  => character.onArmorChanged;
 		public UnityEvent onManaChanged   => character.onManaChanged;
+
+		private void Start() {
+			_deck.Initialize(_defaultCards);
+			foreach (var card in _defaultCards) {
+				character.attributeSet.Add(card.attributeBonus);
+			}
+		}
 
 		public void PrepareForBattle() {
 			character.PrepareForBattle();

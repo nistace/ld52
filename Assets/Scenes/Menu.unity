@@ -709,6 +709,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906727045}
   m_CullTransparentMesh: 1
+--- !u!114 &1081550413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3443572083584135323, guid: e23bf193317b45c43af4e6b6f8035cce, type: 3}
+  m_PrefabInstance: {fileID: 188197187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1147816426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,6 +1192,7 @@ MonoBehaviour:
   - Okonut
   - Orn
   _startButton: {fileID: 1941494138}
+  _quitButton: {fileID: 1081550413}
 --- !u!1 &1526181867
 GameObject:
   m_ObjectHideFlags: 0

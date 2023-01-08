@@ -5,6 +5,7 @@ using LD52.Data.Cards;
 using LD52.Data.Characters.Heroes;
 using LD52.Data.Characters.Opponents;
 using UnityEngine;
+using Utils.Events;
 using Utils.Extensions;
 using Object = UnityEngine.Object;
 
@@ -17,6 +18,10 @@ namespace LD52.Data.Games {
 		[SerializeField] protected OpponentTeam _opponentTeam;
 		[SerializeField] protected int          _boosterLevels;
 		[SerializeField] protected CardReserve  _cardReserve = new CardReserve();
+
+		public int stepCount => _gameData.scenarioSteps.Count;
+
+		public IntEvent onStepChanged { get; } = new IntEvent();
 
 		public Game(GameData data) {
 			_gameData = data;
@@ -33,7 +38,11 @@ namespace LD52.Data.Games {
 
 		public bool IsScenarioEnded() => _currentScenarioStep >= _gameData.scenarioSteps.Count;
 
-		public void EndCurrentScenarioStep() => _currentScenarioStep++;
+		public void EndCurrentScenarioStep() {
+			_currentScenarioStep++;
+			onStepChanged.Invoke(_currentScenarioStep);
+		}
+
 		public IReadScenarioStep GetCurrentScenarioStep() => _gameData.scenarioSteps[_currentScenarioStep];
 
 		public void RecruitHero(Hero heroPrefab) {

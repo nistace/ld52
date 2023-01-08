@@ -6,11 +6,13 @@ namespace LD52.Data.Games {
 		[SerializeField] protected GameRecruitUi   _recruit;
 		[SerializeField] protected GameGetCardsUi  _loot;
 		[SerializeField] protected GameInventoryUi _inventory;
+		[SerializeField] protected ProgressBarUi   _progressBar;
 
-		public GameBattleUi    battle    => _battle;
-		public GameRecruitUi   recruit   => _recruit;
-		public GameGetCardsUi  loot      => _loot;
-		public GameInventoryUi inventory => _inventory;
+		public GameBattleUi    battle      => _battle;
+		public GameRecruitUi   recruit     => _recruit;
+		public GameGetCardsUi  loot        => _loot;
+		public GameInventoryUi inventory   => _inventory;
+		public ProgressBarUi   progressBar => _progressBar;
 
 		public enum Panel {
 			Intro,

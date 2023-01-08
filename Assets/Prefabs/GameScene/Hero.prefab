@@ -242,8 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetSelection: {fileID: 4978024943614801525}
+  _portrait: {fileID: 4822617196711089096}
   _barUi: {fileID: 3912297113034747675}
-  _heroImage: {fileID: 3117651267116084706}
   _heroName: {fileID: 2364655000200525691}
   _discardCardParent: {fileID: 3291085074048429723}
   _discardTopCard: {fileID: 5468608443275675131}
@@ -1142,17 +1142,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6238910085774392598, guid: 5d8489410b07e0b4f8ba3ffca9933433, type: 3}
   m_PrefabInstance: {fileID: 8184253529849693957}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3117651267116084706 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6543818726715534055, guid: 5d8489410b07e0b4f8ba3ffca9933433, type: 3}
-  m_PrefabInstance: {fileID: 8184253529849693957}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3912297113034747675 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5178869400053573662, guid: 5d8489410b07e0b4f8ba3ffca9933433, type: 3}
@@ -1162,5 +1151,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41dee9fbaeed4b66ad94c39d7f5a5b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4822617196711089096 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3709048489641645261, guid: 5d8489410b07e0b4f8ba3ffca9933433, type: 3}
+  m_PrefabInstance: {fileID: 8184253529849693957}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2c78b01c5f45278eb0797adaafdf45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

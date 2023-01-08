@@ -41,16 +41,19 @@ namespace LD52.Data.Cards {
 			if (!_hoveredCard) yield break;
 			_cardUi.Set(_hoveredCard.card, _hoveredCard.cardOwner);
 			_cardUi.gameObject.SetActive(true);
+			Cursor.visible = false;
 
 			while (_hoveredCard) {
 				_cardUi.transform.position = Input.mousePosition;
 				yield return null;
 			}
 			_cardUi.gameObject.SetActive(false);
+			Cursor.visible = true;
 		}
 
 		private void OnDisable() {
 			_cardUi.gameObject.SetActive(false);
+			Cursor.visible = true;
 		}
 	}
 }

@@ -40,6 +40,10 @@ namespace LD52.Data.Games {
 					uiPerOpponent.Add(opponentTeam.opponents[i], _opponentUis[i]);
 				}
 			}
+
+			BattleUiData.uiPerCharacter.Clear();
+			uiPerHero.ForEach(t => BattleUiData.uiPerCharacter.Add(t.Key.character, t.Value));
+			uiPerOpponent.ForEach(t => BattleUiData.uiPerCharacter.Add(t.Key.character, t.Value));
 			HideCardBeingPlayed();
 		}
 

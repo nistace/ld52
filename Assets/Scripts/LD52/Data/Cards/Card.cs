@@ -18,6 +18,7 @@ namespace LD52.Data.Cards {
 		[SerializeField]                       protected CardAction              _action;
 		[SerializeField]                       protected CharacterModifiers      _additionModifiers;
 		[SerializeField]                       protected CharacterModifiers      _removedModifiers;
+		[SerializeField]                       protected CardEffectAnimationData _animationData = new CardEffectAnimationData();
 		[SerializeField]                       protected CardTarget              _target;
 		[SerializeField]                       protected CharacterAttribute      _attribute           = CharacterAttribute.Attack;
 		[SerializeField]                       protected int                     _attributeMultiplier = 1;
@@ -41,6 +42,7 @@ namespace LD52.Data.Cards {
 		public CharacterModifiers      forbiddenModifiers => _forbiddenModifiers;
 		public int                     manaCost           => _manaCost;
 		public CharacterModifiers      additionModifiers  => _additionModifiers;
+		public CardEffectAnimationData animationData      => _animationData;
 
 		public int GetStrength(IReadCharacterAttributeSet attributeSet) => attributeSet[_attribute] * _attributeMultiplier + _constantStrength;
 

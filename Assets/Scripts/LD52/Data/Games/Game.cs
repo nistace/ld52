@@ -17,7 +17,7 @@ namespace LD52.Data.Games {
 
 		public Game(GameData data) {
 			_gameData = data;
-			_playerHeroes.Add(Object.Instantiate(GetAvailableHeroesToRecruit().Random()));
+			RecruitHero(_gameData.firstHero);
 		}
 
 		public List<Hero>   playerHeroes => _playerHeroes;
@@ -30,5 +30,6 @@ namespace LD52.Data.Games {
 
 		public void EndCurrentScenarioStep() => _currentScenarioStep++;
 		public IReadScenarioStep GetCurrentScenarioStep() => _gameData.scenarioSteps[_currentScenarioStep];
+		public void RecruitHero(Hero heroPrefab) => _playerHeroes.Add(Object.Instantiate(heroPrefab));
 	}
 }

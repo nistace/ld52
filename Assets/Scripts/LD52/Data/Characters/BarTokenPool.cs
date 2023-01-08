@@ -18,6 +18,7 @@ namespace LD52.Data.Characters {
 		private void Start() {
 			instance = this;
 			pool.Clear();
+			gameObject.SetActive(false);
 		}
 
 		public static void Pool(Image token) {

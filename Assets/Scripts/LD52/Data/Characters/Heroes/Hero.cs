@@ -1,4 +1,4 @@
-using System;
+using System.Collections.Generic;
 using LD52.Data.Cards;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,6 +6,8 @@ using UnityEngine.Events;
 namespace LD52.Data.Characters.Heroes {
 	[RequireComponent(typeof(GenericCharacter))]
 	public class Hero : MonoBehaviour {
+		public class Event : UnityEvent<Hero> { }
+
 		[SerializeField] protected GenericCharacter _character;
 		[SerializeField] protected Card[]           _defaultCards;
 		[SerializeField] protected Deck             _deck = new Deck();
@@ -18,6 +20,8 @@ namespace LD52.Data.Characters.Heroes {
 		public int              mana        => character.mana;
 		public int              maxHealth   => character.maxHealth;
 		public int              maxMana     => character.maxMana;
+
+		public IReadOnlyList<Card> defaultCards => _defaultCards;
 
 		public UnityEvent onHealthChanged => character.onHealthChanged;
 		public UnityEvent onArmorChanged  => character.onArmorChanged;

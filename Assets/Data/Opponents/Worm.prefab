@@ -68,7 +68,7 @@ MonoBehaviour:
   _character: {fileID: 8798241365555037536}
   _actions:
   - {fileID: 11400000, guid: 64f8442b6b903804a8246343397c0816, type: 2}
-  - {fileID: 11400000, guid: d6dd964e17e1ccb4d8ceee37d5ff7168, type: 2}
   - {fileID: 11400000, guid: 64f8442b6b903804a8246343397c0816, type: 2}
+  - {fileID: 11400000, guid: d6dd964e17e1ccb4d8ceee37d5ff7168, type: 2}
   _nextActionIndex: 0
   _upcomingActionTargets: []

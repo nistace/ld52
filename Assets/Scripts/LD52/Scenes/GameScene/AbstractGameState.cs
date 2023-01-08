@@ -18,7 +18,7 @@ namespace LD52.Scenes.GameScene {
 				}
 			}
 
-			if (nextStep == ScenarioStepReward.Character) ChangeState(PickNewCharacterGameState.state);
+			if (nextStep == ScenarioStepReward.Character) ChangeState(RecruitHeroGameState.state);
 			else if (nextStep == ScenarioStepReward.Card) ChangeState(GetCardsGameState.state);
 			else {
 				game.EndCurrentScenarioStep();

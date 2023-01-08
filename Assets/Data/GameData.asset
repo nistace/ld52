@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 4971716009884228050, guid: f55bcf4e6e1a48b4ca39cc28f85c3771, type: 3}
   - {fileID: 4971716009884228050, guid: 7da0b558274459b428a8a1c582ddffb8, type: 3}
   - {fileID: 4971716009884228050, guid: b2877c4ef1b89ae4cb7a85d107241db3, type: 3}
+  _firstHero: {fileID: 4971716009884228050, guid: 5c0e29128384eae47a493d6f89503dae, type: 3}
   _scenarioSteps:
   - _startWithHeroInventory: 0
     _opponentPrefabs:

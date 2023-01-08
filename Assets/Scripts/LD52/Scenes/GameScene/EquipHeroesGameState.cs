@@ -9,7 +9,7 @@ namespace LD52.Scenes.GameScene {
 		private EquipHeroesGameState() { }
 
 		protected override void Enable() {
-			ui.Show(GameUi.Panel.RecruitHero);
+			ui.Show(GameUi.Panel.EquipHeroes);
 			Debug.Log("EquipHeroesGameState");
 			CoroutineRunner.Run(AndContinue());
 		}

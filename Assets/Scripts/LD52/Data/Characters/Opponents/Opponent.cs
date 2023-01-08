@@ -11,18 +11,18 @@ namespace LD52.Data.Characters.Opponents {
 		[SerializeField] protected int                    _nextActionIndex;
 		[SerializeField] protected List<GenericCharacter> _upcomingActionTargets = new List<GenericCharacter>();
 
-		public GenericCharacter              character             => _character ? _character : GetComponent<GenericCharacter>();
-		public string                        displayName           => character.displayName;
-		public int                           armor                 => character.armor;
-		public int                           health                => character.health;
-		public int                           mana                  => character.mana;
-		public int                           maxHealth             => character.maxHealth;
-		public int                           maxMana               => character.maxMana;
-		public Card[]                        actions               => _actions;
-		public int                           nextActionIndex       => _nextActionIndex;
-		public IEnumerable<GenericCharacter> upcomingActionTargets => _upcomingActionTargets;
-		public Card                          upcomingAction        => _actions[nextActionIndex];
-		public bool                          actionDone            { get; private set; }
+		public GenericCharacter                character             => _character ? _character : GetComponent<GenericCharacter>();
+		public string                          displayName           => character.displayName;
+		public int                             armor                 => character.armor;
+		public int                             health                => character.health;
+		public int                             mana                  => character.mana;
+		public int                             maxHealth             => character.maxHealth;
+		public int                             maxMana               => character.maxMana;
+		public Card[]                          actions               => _actions;
+		public int                             nextActionIndex       => _nextActionIndex;
+		public IReadOnlyList<GenericCharacter> upcomingActionTargets => _upcomingActionTargets;
+		public Card                            upcomingAction        => _actions[nextActionIndex];
+		public bool                            actionDone            { get; private set; }
 
 		public UnityEvent onUpcomingActionChanged { get; } = new UnityEvent();
 

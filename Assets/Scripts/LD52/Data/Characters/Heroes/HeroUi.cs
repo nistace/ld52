@@ -4,31 +4,31 @@ using LD52.Data.Cards;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 using Utils.Extensions;
 
 namespace LD52.Data.Characters.Heroes {
 	[RequireComponent(typeof(TargetSelectionUi))]
-	public class HeroUi : MonoBehaviour {
-		[SerializeField] protected TargetSelectionUi _targetSelection;
-		[SerializeField] protected CharacterBarUi    _barUi;
-		[SerializeField] protected Image             _heroImage;
-		[SerializeField] protected TMP_Text          _heroName;
-		[SerializeField] protected RectTransform     _discardCardParent;
-		[SerializeField] protected SimpleCardUi      _discardTopCard;
-		[SerializeField] protected RectTransform     _stackCardParent;
-		[SerializeField] protected RectTransform[]   _optionParents;
-		[SerializeField] protected SimpleCardUi[]    _optionCards;
-		[SerializeField] protected Hero              _hero;
-		[SerializeField] protected float             _cardMovementSpeed = 2;
+	public class HeroUi : MonoBehaviour, ICharacterUi {
+		[SerializeField] protected TargetSelectionUi   _targetSelection;
+		[SerializeField] protected CharacterPortraitUi _portrait;
+		[SerializeField] protected CharacterBarUi      _barUi;
+		[SerializeField] protected TMP_Text            _heroName;
+		[SerializeField] protected RectTransform       _discardCardParent;
+		[SerializeField] protected SimpleCardUi        _discardTopCard;
+		[SerializeField] protected RectTransform       _stackCardParent;
+		[SerializeField] protected RectTransform[]     _optionParents;
+		[SerializeField] protected SimpleCardUi[]      _optionCards;
+		[SerializeField] protected Hero                _hero;
+		[SerializeField] protected float               _cardMovementSpeed = 2;
 
-		public TargetSelectionUi targetSelection => _targetSelection ? _targetSelection : _targetSelection = GetComponent<TargetSelectionUi>();
+		public  TargetSelectionUi   targetSelection => _targetSelection ? _targetSelection : _targetSelection = GetComponent<TargetSelectionUi>();
+		private Hero                hero            => _hero;
+		public  Vector2             position        => portrait.transform.position;
+		public  CharacterPortraitUi portrait        => _portrait ? _portrait : _portrait = GetComponent<CharacterPortraitUi>();
 
 		public class Event : UnityEvent<Hero, int> { }
 
 		public static Event onDrawnCardClicked { get; } = new Event();
-
-		private Hero hero => _hero;
 
 		private void Start() => _optionCards.ForEach(t => t.onClick.AddListenerOnce(HandleOptionCardClicked));
 		private void HandleOptionCardClicked(SimpleCardUi card) => onDrawnCardClicked.Invoke(hero, _optionCards.IndexOf(card));
@@ -37,7 +37,7 @@ namespace LD52.Data.Characters.Heroes {
 			_barUi.Unset();
 			_hero = hero;
 			if (!_hero) return;
-			_heroImage.sprite = hero.character.portrait;
+			portrait.Set(_hero.character);
 			_heroName.text = _hero.displayName;
 			for (var i = 0; i < _optionParents.Length; ++i) {
 				_optionCards[i].transform.SetParent(_stackCardParent);
@@ -119,11 +119,6 @@ namespace LD52.Data.Characters.Heroes {
 
 			_discardTopCard.gameObject.SetActive(true);
 			_discardTopCard.Set(_optionCards[^1].card, hero.character);
-		}
-
-		private void Update() {
-			if (!hero) return;
-			_heroImage.sprite = hero.character.portrait;
 		}
 	}
 }

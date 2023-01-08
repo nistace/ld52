@@ -10,6 +10,7 @@ using LD52.Data.Games;
 using LD52.Data.Modifiers;
 using UnityEngine;
 using UnityEngine.Events;
+using Utils.Coroutines;
 using Utils.Extensions;
 using Utils.StaticUtils;
 
@@ -85,20 +86,18 @@ namespace LD52.Scenes.GameScene {
 			return PlayEffect(caster.character, card, targets, callback);
 		}
 
-		public static IEnumerator PlayEffect(Game game, Opponent caster) => PlayEffect(caster.character, caster.upcomingAction, caster.upcomingActionTargets, null);
+		public static IEnumerator PlayEffect(Opponent caster) => PlayEffect(caster.character, caster.upcomingAction, caster.upcomingActionTargets, null);
 
 		private static IEnumerator PlayEffect(GenericCharacter caster, Card card, IEnumerable<GenericCharacter> targets, UnityAction callback) {
 			var validTargets = targets.Where(t => CheckRestrictions(card, t)).ToArray();
-			caster.ConsumeMana(card.manaCost);
 			Debug.Log($"{caster.displayName} casts {card.displayName} on {string.Join(", ", validTargets.Select(t => t.displayName))}");
-			yield return null;
-			// TODO Play animation
+			caster.ConsumeMana(card.manaCost);
 			var solver = GetActionSolver(card);
-			validTargets.ForEach(t => {
+			yield return CoroutineRunner.Run(BattleUiData.uiPerCharacter[caster].portrait.Animate(card.animationData, card.icon, validTargets, () => validTargets.ForEach(t => {
 				solver.Invoke(caster, t);
 				if (card.action == CardAction.Attack && t.HasModifier(CharacterModifiers.Stinging)) caster.Damage(2);
 				t.AddModifiers(card.additionModifiers);
-			});
+			})));
 			callback?.Invoke();
 		}
 

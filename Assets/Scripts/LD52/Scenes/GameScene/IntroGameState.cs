@@ -10,13 +10,14 @@ namespace LD52.Scenes.GameScene {
 
 		protected override void Enable() {
 			ui.Show(GameUi.Panel.Intro);
+			Debug.Log("intro");
 			// TODO INTRO
 			CoroutineRunner.Run(WaitAndStartBattle());
 		}
 
 		private static IEnumerator WaitAndStartBattle() {
 			yield return new WaitForSeconds(.5f);
-			ChangeState(game.GetCurrentScenarioStep().equipmentStep ? EquipHeroesGameState.state : BattleGameState.state);
+			ChangeState(BattleGameState.state);
 		}
 
 		protected override void Disable() { }

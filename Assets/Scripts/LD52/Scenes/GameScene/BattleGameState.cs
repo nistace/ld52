@@ -31,6 +31,7 @@ namespace LD52.Scenes.GameScene {
 
 		private IEnumerator PlayIntro() {
 			// TODO HANDLE INTRO
+			yield return new WaitForSeconds(1);
 			CardZoomUi.instanceEnabled = true;
 			yield return CoroutineRunner.Run(StartTurn());
 		}
@@ -62,6 +63,8 @@ namespace LD52.Scenes.GameScene {
 				opponent.SetTargetsForUpcomingAction(CardEffectManager.SelectTargetsForUpcomingAction(game, opponent));
 				yield return new WaitForSeconds(.3f);
 			}
+
+			yield return new WaitForSeconds(.5f);
 
 			foreach (var hero in game.playerHeroes.Where(t => !t.character.dead)) {
 				hero.deck.DrawNext();
@@ -99,7 +102,7 @@ namespace LD52.Scenes.GameScene {
 			game.opponentTeam.opponents.ForEach(t => t.character.RefreshModifiersForNewTurn());
 
 			foreach (var opponent in game.opponentTeam.opponents.Where(opponent => !opponent.character.dead)) {
-				yield return CoroutineRunner.Run(CardEffectManager.PlayEffect(game, opponent));
+				yield return CoroutineRunner.Run(CardEffectManager.PlayEffect(opponent));
 				opponent.SetActionAsDone();
 				if (IsGameOver()) {
 					CoroutineRunner.Run(PlayOutro());
@@ -186,6 +189,12 @@ namespace LD52.Scenes.GameScene {
 			ResumePlayerTurn();
 		}
 
-		protected override void Disable() { }
+		protected override void Disable() {
+			HeroUi.onDrawnCardClicked.RemoveListener(HandleHeroCardClicked);
+			TargetSelectionUi.onAnyClicked.RemoveListener(HandleTargetSelected);
+			ui.battle.onPlayingCardConfirmed.RemoveListener(HandlePlayingCardConfirmed);
+			ui.battle.onPlayingCardCancelled.RemoveListener(HandlePlayingCardCancelled);
+			ui.battle.onEndTurnClicked.RemoveListener(EndTurn);
+		}
 	}
 }

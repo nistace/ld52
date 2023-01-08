@@ -28,7 +28,7 @@ MonoBehaviour:
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
     - {fileID: 8798241365555037537, guid: a68e2c49834c5b54c8fcd248a379a9f2, type: 3}
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
-    _reward: 1
+    _reward: -1
   - _startWithHeroInventory: 1
     _opponentPrefabs:
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
@@ -45,7 +45,7 @@ MonoBehaviour:
     _opponentPrefabs:
     - {fileID: 8798241365555037537, guid: c0eec097cfe720b4e964c21d1b802dc9, type: 3}
     - {fileID: 8798241365555037537, guid: 40a74440b9178b94a8a30a0280956f8b, type: 3}
-    _reward: 1
+    _reward: -1
   - _startWithHeroInventory: 1
     _opponentPrefabs:
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
@@ -71,7 +71,7 @@ MonoBehaviour:
     - {fileID: 8798241365555037537, guid: 40a74440b9178b94a8a30a0280956f8b, type: 3}
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
     - {fileID: 8798241365555037537, guid: 6bebe236bd8d41b40a20dad2e65f55e1, type: 3}
-    _reward: 1
+    _reward: -1
   - _startWithHeroInventory: 1
     _opponentPrefabs:
     - {fileID: 8798241365555037537, guid: b85771eee38ea33479d776b288f44bfd, type: 3}
@@ -79,7 +79,7 @@ MonoBehaviour:
     - {fileID: 8798241365555037537, guid: 2cb58ee1469c25247b41a7fab75efc3c, type: 3}
     - {fileID: 8798241365555037537, guid: c0eec097cfe720b4e964c21d1b802dc9, type: 3}
     - {fileID: 8798241365555037537, guid: 40a74440b9178b94a8a30a0280956f8b, type: 3}
-    _reward: 1
+    _reward: 0
   _lootCards:
   - {fileID: 11400000, guid: 243a479197cd58541979ae04b5c2dae4, type: 2}
   - {fileID: 11400000, guid: d6dd964e17e1ccb4d8ceee37d5ff7168, type: 2}

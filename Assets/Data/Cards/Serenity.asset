@@ -158,7 +158,7 @@ MonoBehaviour:
   _attribute: 2
   _attributeMultiplier: 1
   _constantStrength: 0
-  _level: 2
+  _level: 4
   _attributeBonus:
     _attribute: 2
     _value: 1

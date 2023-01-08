@@ -261,7 +261,7 @@
     "duration": 100
    },
    {
-    "filename": "target_self.default.0",
+    "filename": "sapTransfusion.default.0",
     "frame": { "x": 91, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -270,7 +270,7 @@
     "duration": 100
    },
    {
-    "filename": "target_ally.default.0",
+    "filename": "target_self.default.0",
     "frame": { "x": 109, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -279,7 +279,7 @@
     "duration": 100
    },
    {
-    "filename": "target_allyOrSelf.default.0",
+    "filename": "target_ally.default.0",
     "frame": { "x": 127, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -288,7 +288,7 @@
     "duration": 100
    },
    {
-    "filename": "target_allAllies.default.0",
+    "filename": "target_allyOrSelf.default.0",
     "frame": { "x": 145, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -297,7 +297,7 @@
     "duration": 100
    },
    {
-    "filename": "target_allAlliesAndSelf.default.0",
+    "filename": "target_allAllies.default.0",
     "frame": { "x": 163, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -306,7 +306,7 @@
     "duration": 100
    },
    {
-    "filename": "target_opponent.default.0",
+    "filename": "target_allAlliesAndSelf.default.0",
     "frame": { "x": 181, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -315,8 +315,17 @@
     "duration": 100
    },
    {
-    "filename": "target_allOpponents.default.0",
+    "filename": "target_opponent.default.0",
     "frame": { "x": 199, "y": 37, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "target_allOpponents.default.0",
+    "frame": { "x": 1, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
@@ -329,7 +338,7 @@
   "version": "1.2.40-x64",
   "image": "card_actions.png",
   "format": "RGBA8888",
-  "size": { "w": 216, "h": 54 },
+  "size": { "w": 216, "h": 72 },
   "scale": "1"
  }
 }

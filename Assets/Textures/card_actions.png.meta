@@ -133,7 +133,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -154,7 +154,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -175,7 +175,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -196,7 +196,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -217,7 +217,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -238,7 +238,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -259,7 +259,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 109
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -280,7 +280,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -301,7 +301,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 145
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -322,7 +322,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 163
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -343,7 +343,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 181
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -364,7 +364,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 37
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -385,7 +385,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -406,7 +406,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -427,7 +427,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -448,7 +448,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -469,7 +469,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -490,7 +490,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -511,7 +511,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 109
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -532,7 +532,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -553,7 +553,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 145
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -574,7 +574,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 163
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -595,7 +595,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 181
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -616,7 +616,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 19
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -637,7 +637,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -658,7 +658,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 1
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -679,7 +679,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 1
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -700,7 +700,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 1
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -721,7 +721,28 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 1
+        y: 19
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sapTransfusion.default.000
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -741,8 +762,8 @@ TextureImporter:
       name: target_self.default.000
       rect:
         serializedVersion: 2
-        x: 91
-        y: 1
+        x: 109
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -762,8 +783,8 @@ TextureImporter:
       name: target_ally.default.000
       rect:
         serializedVersion: 2
-        x: 109
-        y: 1
+        x: 127
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -783,8 +804,8 @@ TextureImporter:
       name: target_allyOrSelf.default.000
       rect:
         serializedVersion: 2
-        x: 127
-        y: 1
+        x: 145
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -804,8 +825,8 @@ TextureImporter:
       name: target_allAllies.default.000
       rect:
         serializedVersion: 2
-        x: 145
-        y: 1
+        x: 163
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -825,8 +846,8 @@ TextureImporter:
       name: target_allAlliesAndSelf.default.000
       rect:
         serializedVersion: 2
-        x: 163
-        y: 1
+        x: 181
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -846,8 +867,8 @@ TextureImporter:
       name: target_opponent.default.000
       rect:
         serializedVersion: 2
-        x: 181
-        y: 1
+        x: 199
+        y: 19
         width: 16
         height: 16
       alignment: 9
@@ -867,7 +888,7 @@ TextureImporter:
       name: target_allOpponents.default.000
       rect:
         serializedVersion: 2
-        x: 199
+        x: 1
         y: 1
         width: 16
         height: 16
@@ -902,6 +923,7 @@ TextureImporter:
       buttScratching.default.000: 0
       Venom.default.000: 0
       Uticantism.default.000: 0
+      sapTransfusion.default.000: 0
       attribute_mana.default.000: 0
       Cornling.default.000: 0
       toxicSpray.default.000: 0

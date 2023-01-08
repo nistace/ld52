@@ -43,7 +43,7 @@ namespace LD52.Scenes.GameScene {
 			else if (currentRaycastResult.TryGetComponentInParent<SimpleCardUi>(out var droppedOnSlot) && currentRaycastResult.TryGetComponentInParent<HeroEquipmentUi>(out var heroBar)) {
 				var card = game.cardReserve.Take(index);
 				heroBar.hero.OverrideCard(heroBar.GetIndexOf(droppedOnSlot), card, out var removedCard);
-				if (removedCard) game.cardReserve.AddCard(card);
+				if (removedCard) game.cardReserve.AddCard(removedCard);
 			}
 			EndDragAndDrop();
 		}

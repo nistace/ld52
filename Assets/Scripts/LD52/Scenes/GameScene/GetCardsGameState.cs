@@ -11,19 +11,22 @@ namespace LD52.Scenes.GameScene {
 			ui.loot.Set(game.GenerateBoosters());
 			ui.Show(GameUi.Panel.GetCards);
 
-			CardZoomUi.instanceEnabled = true;
+			CardZoomUi.SetEnabled(true);
 			CardZoomUi.equippedInfoVisible = true;
 
 			BoosterUi.onBoosterClicked.AddListenerOnce(GetCards);
 		}
 
-		private static void GetCards((Card, Card) booster) {
-			game.ObtainCards(booster);
+		private static void GetCards((Card first, Card second) booster) {
+			(var first, var second) = booster;
+			game.cardReserve.AddCard(first);
+			game.cardReserve.AddCard(second);
 			ChangeStateToNextOutroStep(ScenarioStepReward.Card);
 		}
 
 		protected override void Disable() {
 			BoosterUi.onBoosterClicked.RemoveListener(GetCards);
+			CardZoomUi.SetEnabled(false);
 		}
 	}
 }

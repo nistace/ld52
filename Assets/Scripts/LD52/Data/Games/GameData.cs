@@ -12,10 +12,12 @@ namespace LD52.Data.Games {
 		[SerializeField] protected Hero           _firstHero;
 		[SerializeField] protected ScenarioStep[] _scenarioSteps;
 		[SerializeField] protected Card[]         _lootCards;
+		[SerializeField] protected Card[]         _initialCardsInReserve;
 
-		public IEnumerable<Hero>           allHeroes     => _allHeroes;
-		public Hero                        firstHero     => _firstHero;
-		public IReadOnlyList<ScenarioStep> scenarioSteps => _scenarioSteps;
-		public Card[]                      lootCards     => _lootCards;
+		public IEnumerable<Hero>           allHeroes             => _allHeroes;
+		public Hero                        firstHero             => _firstHero;
+		public IReadOnlyList<ScenarioStep> scenarioSteps         => _scenarioSteps;
+		public IEnumerable<Card>           lootCards             => _lootCards;
+		public Card[]                      initialCardsInReserve => _initialCardsInReserve;
 	}
 }

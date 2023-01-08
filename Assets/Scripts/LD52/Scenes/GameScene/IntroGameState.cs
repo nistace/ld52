@@ -17,7 +17,7 @@ namespace LD52.Scenes.GameScene {
 
 		private static IEnumerator WaitAndStartBattle() {
 			yield return new WaitForSeconds(.5f);
-			ChangeState(BattleGameState.state);
+			ChangeState(game.GetCurrentScenarioStep().equipmentStep ? EquipHeroesGameState.state : BattleGameState.state);
 		}
 
 		protected override void Disable() { }

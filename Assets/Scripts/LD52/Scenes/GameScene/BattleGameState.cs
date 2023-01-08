@@ -32,13 +32,13 @@ namespace LD52.Scenes.GameScene {
 		private IEnumerator PlayIntro() {
 			// TODO HANDLE INTRO
 			yield return new WaitForSeconds(1);
-			CardZoomUi.instanceEnabled = true;
+			CardZoomUi.SetEnabled(true);
 			CardZoomUi.equippedInfoVisible = false;
 			yield return CoroutineRunner.Run(StartTurn());
 		}
 
 		private static IEnumerator PlayOutro() {
-			CardZoomUi.instanceEnabled = false;
+			CardZoomUi.SetEnabled(false);
 			// TODO HANDLE OUTRO
 			yield return new WaitForSeconds(1);
 			ChangeStateToNextOutroStep(null);
@@ -191,6 +191,7 @@ namespace LD52.Scenes.GameScene {
 		}
 
 		protected override void Disable() {
+			CardZoomUi.SetEnabled(false);
 			HeroUi.onDrawnCardClicked.RemoveListener(HandleHeroCardClicked);
 			TargetSelectionUi.onAnyClicked.RemoveListener(HandleTargetSelected);
 			ui.battle.onPlayingCardConfirmed.RemoveListener(HandlePlayingCardConfirmed);

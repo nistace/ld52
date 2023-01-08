@@ -19,10 +19,10 @@ MonoBehaviour:
   - {fileID: 4971716009884228050, guid: b2877c4ef1b89ae4cb7a85d107241db3, type: 3}
   _firstHero: {fileID: 4971716009884228050, guid: 5c0e29128384eae47a493d6f89503dae, type: 3}
   _scenarioSteps:
-  - _startWithHeroInventory: 0
+  - _startWithHeroInventory: 1
     _opponentPrefabs:
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
-    _reward: 2
+    _reward: -1
   - _startWithHeroInventory: 1
     _opponentPrefabs:
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
@@ -48,3 +48,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f36a630a7badab640ac754a93354507e, type: 2}
   - {fileID: 11400000, guid: 1e861cb1f6442c245a2e2a6a656740f2, type: 2}
   - {fileID: 11400000, guid: be06c14b77d63c74e8c5ddb504326099, type: 2}
+  _initialCardsInReserve:
+  - {fileID: 11400000, guid: fb5efaf9fe2397f4c839896fa510f95e, type: 2}
+  - {fileID: 11400000, guid: 250a27397b890bb4ebe4a04b5d516adc, type: 2}

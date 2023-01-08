@@ -16,15 +16,17 @@ namespace LD52.Data.Games {
 		[SerializeField] protected int          _currentScenarioStep;
 		[SerializeField] protected OpponentTeam _opponentTeam;
 		[SerializeField] protected int          _boosterLevels;
-		[SerializeField] protected List<Card>   _unusedCards = new List<Card>();
+		[SerializeField] protected CardReserve  _cardReserve = new CardReserve();
 
 		public Game(GameData data) {
 			_gameData = data;
 			RecruitHero(_gameData.firstHero);
+			_gameData.initialCardsInReserve.ForEach(_cardReserve.AddCard);
 		}
 
-		public List<Hero>   playerHeroes => _playerHeroes;
-		public OpponentTeam opponentTeam => _opponentTeam;
+		public IReadOnlyList<Hero> playerHeroes => _playerHeroes;
+		public OpponentTeam        opponentTeam => _opponentTeam;
+		public CardReserve         cardReserve  => _cardReserve;
 
 		public IEnumerable<Hero> GetAvailableHeroesToRecruit() => _gameData.allHeroes.Except(t => _playerHeroes.Any(u => u.displayName == t.displayName));
 		public OpponentTeam InstantiateOpponentTeam() => _opponentTeam = _gameData.scenarioSteps[_currentScenarioStep].InstantiateOpponentTeam();
@@ -33,18 +35,17 @@ namespace LD52.Data.Games {
 
 		public void EndCurrentScenarioStep() => _currentScenarioStep++;
 		public IReadScenarioStep GetCurrentScenarioStep() => _gameData.scenarioSteps[_currentScenarioStep];
-		public void RecruitHero(Hero heroPrefab) => _playerHeroes.Add(Object.Instantiate(heroPrefab));
+
+		public void RecruitHero(Hero heroPrefab) {
+			var newHero = Object.Instantiate(heroPrefab);
+			newHero.Initialize();
+			_playerHeroes.Add(newHero);
+		}
 
 		public (Card, Card)[] GenerateBoosters() {
 			_boosterLevels++;
 			var candidateCards = _gameData.lootCards.Where(t => t.level <= _boosterLevels).ToList();
 			return 3.CreateArray(_ => (candidateCards.Random(), candidateCards.Random()));
-		}
-
-		public void ObtainCards((Card, Card) booster) {
-			(var first, var second) = booster;
-			_unusedCards.Add(first);
-			_unusedCards.Add(second);
 		}
 	}
 }

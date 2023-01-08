@@ -22,7 +22,7 @@ namespace LD52.Scenes.GameScene {
 			ui.recruit.Set(randomHeroes[0], randomHeroes.Length > 1 ? randomHeroes[1] : null);
 			ui.Show(GameUi.Panel.RecruitHero);
 
-			CardZoomUi.instanceEnabled = true;
+			CardZoomUi.SetEnabled(true);
 			CardZoomUi.equippedInfoVisible = true;
 
 			RecruitHeroUi.onRecruit.AddListenerOnce(RecruitHero);
@@ -34,6 +34,7 @@ namespace LD52.Scenes.GameScene {
 		}
 
 		protected override void Disable() {
+			CardZoomUi.SetEnabled(false);
 			RecruitHeroUi.onRecruit.RemoveListener(RecruitHero);
 		}
 	}

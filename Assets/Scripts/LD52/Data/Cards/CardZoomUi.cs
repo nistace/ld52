@@ -10,18 +10,17 @@ namespace LD52.Data.Cards {
 			set => instance._cardUi.SetEquippedInfoVisible(value);
 		}
 
-		public static bool instanceEnabled {
-			get => instance.enabled;
-			set => instance.enabled = value;
-		}
+		private static bool instanceEnabled { get; set; }
 
 		[SerializeField] protected SimpleCardUi _hoveredCard;
 		[SerializeField] protected FullCardUi   _cardUi;
 
+		public static void SetEnabled(bool enabled) => instanceEnabled = enabled;
+
 		private void Start() {
 			instance = this;
-			SimpleCardUi.onCardHover.AddListenerOnce(HandleCardOver);
-			SimpleCardUi.onCardStopHover.AddListenerOnce(HandleCardStopOver);
+			SimpleCardUi.onAnyCardHover.AddListenerOnce(HandleCardOver);
+			SimpleCardUi.onAnyCardStopHover.AddListenerOnce(HandleCardStopOver);
 			instanceEnabled = false;
 		}
 
@@ -36,26 +35,17 @@ namespace LD52.Data.Cards {
 			_hoveredCard = null;
 		}
 
-		private void OnEnable() {
-			StopAllCoroutines();
-			if (_hoveredCard) StartCoroutine(ShowCard());
-		}
-
 		private IEnumerator ShowCard() {
+			if (!instanceEnabled) yield break;
 			if (!_hoveredCard) yield break;
 			_cardUi.Set(_hoveredCard.card, _hoveredCard.cardOwner);
 			_cardUi.gameObject.SetActive(true);
 			Cursor.visible = false;
 
-			while (_hoveredCard) {
+			while (_hoveredCard && instanceEnabled) {
 				_cardUi.transform.position = Input.mousePosition;
 				yield return null;
 			}
-			_cardUi.gameObject.SetActive(false);
-			Cursor.visible = true;
-		}
-
-		private void OnDisable() {
 			_cardUi.gameObject.SetActive(false);
 			Cursor.visible = true;
 		}

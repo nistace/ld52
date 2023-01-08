@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using LD52.Data.Games;
-using UnityEngine;
-using Utils.Coroutines;
+﻿using LD52.Data.Games;
+using UnityEngine.SceneManagement;
 
 namespace LD52.Scenes.GameScene {
 	public class GameOverGameState : AbstractGameState {
@@ -10,7 +8,8 @@ namespace LD52.Scenes.GameScene {
 
 		protected override void Enable() {
 			ui.Show(GameUi.Panel.Outro);
-			Debug.Log("GameOverGameState");
+			GameOverController.won = game.IsScenarioEnded();
+			SceneManager.LoadScene("GameOver");
 		}
 
 		protected override void Disable() { }

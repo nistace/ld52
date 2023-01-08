@@ -108,7 +108,7 @@
     "duration": 100
    },
    {
-    "filename": "KidSkateboardingOnTheSidewalks.idle.0",
+    "filename": "SkateboardingKid.idle.0",
     "frame": { "x": 1, "y": 19, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -117,7 +117,7 @@
     "duration": 100
    },
    {
-    "filename": "KidSkateboardingOnTheSidewalks.idle.1",
+    "filename": "SkateboardingKid.idle.1",
     "frame": { "x": 19, "y": 19, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -180,7 +180,7 @@
     "duration": 100
    },
    {
-    "filename": "Harrot.dead.0",
+    "filename": "ZeusTheBull.idle.0",
     "frame": { "x": 145, "y": 19, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -189,7 +189,7 @@
     "duration": 100
    },
    {
-    "filename": "Orn.dead.0",
+    "filename": "ZeusTheBull.idle.1",
     "frame": { "x": 163, "y": 19, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -198,7 +198,7 @@
     "duration": 100
    },
    {
-    "filename": "Okonut.dead.0",
+    "filename": "TheHarvester.idle.0",
     "frame": { "x": 181, "y": 19, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -207,7 +207,7 @@
     "duration": 100
    },
    {
-    "filename": "Auli.dead.0",
+    "filename": "TheHarvester.idle.1",
     "frame": { "x": 199, "y": 19, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -216,7 +216,7 @@
     "duration": 100
    },
    {
-    "filename": "BigJoe.dead.0",
+    "filename": "Harrot.dead.0",
     "frame": { "x": 1, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -225,7 +225,7 @@
     "duration": 100
    },
    {
-    "filename": "LilEdgar.dead.0",
+    "filename": "Orn.dead.0",
     "frame": { "x": 19, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -234,7 +234,7 @@
     "duration": 100
    },
    {
-    "filename": "KidSkateboardingOnTheSidewalks.dead.0",
+    "filename": "Okonut.dead.0",
     "frame": { "x": 37, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -243,7 +243,7 @@
     "duration": 100
    },
    {
-    "filename": "StompingKid.dead.0",
+    "filename": "Auli.dead.0",
     "frame": { "x": 55, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -252,7 +252,7 @@
     "duration": 100
    },
    {
-    "filename": "Worm.dead.0",
+    "filename": "BigJoe.dead.0",
     "frame": { "x": 73, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -261,7 +261,7 @@
     "duration": 100
    },
    {
-    "filename": "Chicken.dead.0",
+    "filename": "LilEdgar.dead.0",
     "frame": { "x": 91, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -270,7 +270,7 @@
     "duration": 100
    },
    {
-    "filename": "Harrot.buried.0",
+    "filename": "SkateboardingKid.dead.0",
     "frame": { "x": 109, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -279,7 +279,7 @@
     "duration": 100
    },
    {
-    "filename": "Orn.buried.0",
+    "filename": "StompingKid.dead.0",
     "frame": { "x": 127, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -288,7 +288,7 @@
     "duration": 100
    },
    {
-    "filename": "Okonut.buried.0",
+    "filename": "Worm.dead.0",
     "frame": { "x": 145, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -297,7 +297,7 @@
     "duration": 100
    },
    {
-    "filename": "Auli.buried.0",
+    "filename": "Chicken.dead.0",
     "frame": { "x": 163, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -306,7 +306,7 @@
     "duration": 100
    },
    {
-    "filename": "BigJoe.buried.0",
+    "filename": "ZeusTheBull.dead.0",
     "frame": { "x": 181, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -315,7 +315,7 @@
     "duration": 100
    },
    {
-    "filename": "LilEdgar.buried.0",
+    "filename": "TheHarvester.dead.0",
     "frame": { "x": 199, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -324,7 +324,7 @@
     "duration": 100
    },
    {
-    "filename": "KidSkateboardingOnTheSidewalks.buried.0",
+    "filename": "Harrot.buried.0",
     "frame": { "x": 1, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -333,7 +333,7 @@
     "duration": 100
    },
    {
-    "filename": "StompingKid.buried.0",
+    "filename": "Orn.buried.0",
     "frame": { "x": 19, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -342,7 +342,7 @@
     "duration": 100
    },
    {
-    "filename": "Worm.buried.0",
+    "filename": "Okonut.buried.0",
     "frame": { "x": 37, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -351,7 +351,7 @@
     "duration": 100
    },
    {
-    "filename": "Chicken.buried.0",
+    "filename": "Auli.buried.0",
     "frame": { "x": 55, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -360,7 +360,7 @@
     "duration": 100
    },
    {
-    "filename": "Harrot.dance.0",
+    "filename": "BigJoe.buried.0",
     "frame": { "x": 73, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -369,7 +369,7 @@
     "duration": 100
    },
    {
-    "filename": "Harrot.dance.1",
+    "filename": "LilEdgar.buried.0",
     "frame": { "x": 91, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -378,7 +378,7 @@
     "duration": 100
    },
    {
-    "filename": "Harrot.dance.2",
+    "filename": "SkateboardingKid.buried.0",
     "frame": { "x": 109, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -387,7 +387,7 @@
     "duration": 100
    },
    {
-    "filename": "Orn.dance.0",
+    "filename": "StompingKid.buried.0",
     "frame": { "x": 127, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -396,7 +396,7 @@
     "duration": 100
    },
    {
-    "filename": "Orn.dance.1",
+    "filename": "Worm.buried.0",
     "frame": { "x": 145, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -405,7 +405,7 @@
     "duration": 100
    },
    {
-    "filename": "Orn.dance.2",
+    "filename": "Chicken.buried.0",
     "frame": { "x": 163, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -414,7 +414,7 @@
     "duration": 100
    },
    {
-    "filename": "Okonut.dance.0",
+    "filename": "ZeusTheBull.buried.0",
     "frame": { "x": 181, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -423,7 +423,7 @@
     "duration": 100
    },
    {
-    "filename": "Okonut.dance.1",
+    "filename": "TheHarvester.buried.0",
     "frame": { "x": 199, "y": 55, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -432,7 +432,7 @@
     "duration": 100
    },
    {
-    "filename": "Okonut.dance.2",
+    "filename": "Harrot.dance.0",
     "frame": { "x": 1, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -441,7 +441,7 @@
     "duration": 100
    },
    {
-    "filename": "Auli.dance.0",
+    "filename": "Harrot.dance.1",
     "frame": { "x": 19, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -450,7 +450,7 @@
     "duration": 100
    },
    {
-    "filename": "Auli.dance.1",
+    "filename": "Harrot.dance.2",
     "frame": { "x": 37, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -459,7 +459,7 @@
     "duration": 100
    },
    {
-    "filename": "Auli.dance.2",
+    "filename": "Orn.dance.0",
     "frame": { "x": 55, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -468,7 +468,7 @@
     "duration": 100
    },
    {
-    "filename": "BigJoe.dance.0",
+    "filename": "Orn.dance.1",
     "frame": { "x": 73, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -477,7 +477,7 @@
     "duration": 100
    },
    {
-    "filename": "BigJoe.dance.1",
+    "filename": "Orn.dance.2",
     "frame": { "x": 91, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -486,7 +486,7 @@
     "duration": 100
    },
    {
-    "filename": "BigJoe.dance.2",
+    "filename": "Okonut.dance.0",
     "frame": { "x": 109, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -495,7 +495,7 @@
     "duration": 100
    },
    {
-    "filename": "LilEdgar.dance.0",
+    "filename": "Okonut.dance.1",
     "frame": { "x": 127, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -504,7 +504,7 @@
     "duration": 100
    },
    {
-    "filename": "LilEdgar.dance.1",
+    "filename": "Okonut.dance.2",
     "frame": { "x": 145, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -513,7 +513,7 @@
     "duration": 100
    },
    {
-    "filename": "LilEdgar.dance.2",
+    "filename": "Auli.dance.0",
     "frame": { "x": 163, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -522,7 +522,7 @@
     "duration": 100
    },
    {
-    "filename": "KidSkateboardingOnTheSidewalks.dance.0",
+    "filename": "Auli.dance.1",
     "frame": { "x": 181, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -531,7 +531,7 @@
     "duration": 100
    },
    {
-    "filename": "KidSkateboardingOnTheSidewalks.dance.1",
+    "filename": "Auli.dance.2",
     "frame": { "x": 199, "y": 73, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -540,7 +540,7 @@
     "duration": 100
    },
    {
-    "filename": "KidSkateboardingOnTheSidewalks.dance.2",
+    "filename": "BigJoe.dance.0",
     "frame": { "x": 1, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -549,7 +549,7 @@
     "duration": 100
    },
    {
-    "filename": "StompingKid.dance.0",
+    "filename": "BigJoe.dance.1",
     "frame": { "x": 19, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -558,7 +558,7 @@
     "duration": 100
    },
    {
-    "filename": "StompingKid.dance.1",
+    "filename": "BigJoe.dance.2",
     "frame": { "x": 37, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -567,7 +567,7 @@
     "duration": 100
    },
    {
-    "filename": "StompingKid.dance.2",
+    "filename": "LilEdgar.dance.0",
     "frame": { "x": 55, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -576,7 +576,7 @@
     "duration": 100
    },
    {
-    "filename": "Worm.dance.0",
+    "filename": "LilEdgar.dance.1",
     "frame": { "x": 73, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -585,7 +585,7 @@
     "duration": 100
    },
    {
-    "filename": "Worm.dance.1",
+    "filename": "LilEdgar.dance.2",
     "frame": { "x": 91, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -594,7 +594,7 @@
     "duration": 100
    },
    {
-    "filename": "Worm.dance.2",
+    "filename": "SkateboardingKid.dance.0",
     "frame": { "x": 109, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -603,7 +603,7 @@
     "duration": 100
    },
    {
-    "filename": "Chicken.dance.0",
+    "filename": "SkateboardingKid.dance.1",
     "frame": { "x": 127, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -612,7 +612,7 @@
     "duration": 100
    },
    {
-    "filename": "Chicken.dance.1",
+    "filename": "SkateboardingKid.dance.2",
     "frame": { "x": 145, "y": 91, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -621,8 +621,134 @@
     "duration": 100
    },
    {
-    "filename": "Chicken.dance.2",
+    "filename": "StompingKid.dance.0",
     "frame": { "x": 163, "y": 91, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "StompingKid.dance.1",
+    "frame": { "x": 181, "y": 91, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "StompingKid.dance.2",
+    "frame": { "x": 199, "y": 91, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "Worm.dance.0",
+    "frame": { "x": 1, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "Worm.dance.1",
+    "frame": { "x": 19, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "Worm.dance.2",
+    "frame": { "x": 37, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "Chicken.dance.0",
+    "frame": { "x": 55, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "Chicken.dance.1",
+    "frame": { "x": 73, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "Chicken.dance.2",
+    "frame": { "x": 91, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "ZeusTheBull.dance.0",
+    "frame": { "x": 109, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "ZeusTheBull.dance.1",
+    "frame": { "x": 127, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "ZeusTheBull.dance.2",
+    "frame": { "x": 145, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "TheHarvester.dance.0",
+    "frame": { "x": 163, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "TheHarvester.dance.1",
+    "frame": { "x": 181, "y": 109, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "TheHarvester.dance.2",
+    "frame": { "x": 199, "y": 109, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
@@ -635,7 +761,7 @@
   "version": "1.2.40-x64",
   "image": "vegetables.png",
   "format": "RGBA8888",
-  "size": { "w": 216, "h": 108 },
+  "size": { "w": 216, "h": 126 },
   "scale": "1"
  }
 }

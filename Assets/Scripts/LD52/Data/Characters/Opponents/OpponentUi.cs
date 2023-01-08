@@ -10,17 +10,18 @@ using Utils.Extensions;
 namespace LD52.Data.Characters.Opponents {
 	[RequireComponent(typeof(TargetSelectionUi))]
 	public class OpponentUi : MonoBehaviour, ICharacterUi, IPointerEnterHandler, IPointerExitHandler {
-		[SerializeField] protected TargetSelectionUi   _targetSelection;
-		[SerializeField] protected CharacterPortraitUi _portrait;
-		[SerializeField] protected Opponent            _opponent;
-		[SerializeField] protected CharacterBarUi      _barUi;
-		[SerializeField] protected TMP_Text            _nameLabel;
-		[SerializeField] protected SimpleCardUi[]      _cards;
-		[SerializeField] protected RectTransform[]     _cardArrowAnchors;
-		[SerializeField] protected RectTransform       _arrow;
-		[SerializeField] protected float               _arrowSpeed = 200;
-		[SerializeField] protected RectTransform       _targetArrowAnchor;
-		[SerializeField] protected TargetArrowUi       _targetArrowPrefab;
+		[SerializeField] protected TargetSelectionUi    _targetSelection;
+		[SerializeField] protected CharacterPortraitUi  _portrait;
+		[SerializeField] protected CharacterModifiersUi _modifiers;
+		[SerializeField] protected Opponent             _opponent;
+		[SerializeField] protected CharacterBarUi       _barUi;
+		[SerializeField] protected TMP_Text             _nameLabel;
+		[SerializeField] protected SimpleCardUi[]       _cards;
+		[SerializeField] protected RectTransform[]      _cardArrowAnchors;
+		[SerializeField] protected RectTransform        _arrow;
+		[SerializeField] protected float                _arrowSpeed = 200;
+		[SerializeField] protected RectTransform        _targetArrowAnchor;
+		[SerializeField] protected TargetArrowUi        _targetArrowPrefab;
 
 		private Opponent            opponent        => _opponent;
 		private List<TargetArrowUi> targetArrows    { get; } = new List<TargetArrowUi>();
@@ -34,6 +35,7 @@ namespace LD52.Data.Characters.Opponents {
 			_opponent = opponent;
 			if (!_opponent) return;
 			portrait.Set(_opponent.character);
+			_modifiers.Set(opponent.character);
 			_nameLabel.text = opponent.displayName;
 			for (var i = 0; i < _cards.Length; ++i) {
 				_cards[i].gameObject.SetActive(opponent.actions.Length > i);

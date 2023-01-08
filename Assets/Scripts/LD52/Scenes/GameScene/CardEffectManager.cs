@@ -97,6 +97,7 @@ namespace LD52.Scenes.GameScene {
 				solver.Invoke(caster, t);
 				if (card.action == CardAction.Attack && t.HasModifier(CharacterModifiers.Stinging)) caster.Damage(2);
 				t.AddModifiers(card.additionModifiers);
+				t.RemoveModifiers(card.removedModifiers);
 			})));
 			callback?.Invoke();
 		}

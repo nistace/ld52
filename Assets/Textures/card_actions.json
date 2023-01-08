@@ -216,7 +216,7 @@
     "duration": 100
    },
    {
-    "filename": "target_self.default.0",
+    "filename": "accrossTheFields.default.0",
     "frame": { "x": 1, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -225,7 +225,7 @@
     "duration": 100
    },
    {
-    "filename": "target_ally.default.0",
+    "filename": "harvest.default.0",
     "frame": { "x": 19, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -234,7 +234,7 @@
     "duration": 100
    },
    {
-    "filename": "target_allyOrSelf.default.0",
+    "filename": "toxicSpray.default.0",
     "frame": { "x": 37, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -243,7 +243,7 @@
     "duration": 100
    },
    {
-    "filename": "target_allAllies.default.0",
+    "filename": "charge.default.0",
     "frame": { "x": 55, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -252,7 +252,7 @@
     "duration": 100
    },
    {
-    "filename": "target_allAlliesAndSelf.default.0",
+    "filename": "syphon.default.0",
     "frame": { "x": 73, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -261,7 +261,7 @@
     "duration": 100
    },
    {
-    "filename": "target_opponent.default.0",
+    "filename": "target_self.default.0",
     "frame": { "x": 91, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -270,8 +270,53 @@
     "duration": 100
    },
    {
-    "filename": "target_allOpponents.default.0",
+    "filename": "target_ally.default.0",
     "frame": { "x": 109, "y": 37, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "target_allyOrSelf.default.0",
+    "frame": { "x": 127, "y": 37, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "target_allAllies.default.0",
+    "frame": { "x": 145, "y": 37, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "target_allAlliesAndSelf.default.0",
+    "frame": { "x": 163, "y": 37, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "target_opponent.default.0",
+    "frame": { "x": 181, "y": 37, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   },
+   {
+    "filename": "target_allOpponents.default.0",
+    "frame": { "x": 199, "y": 37, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
     "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },

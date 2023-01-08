@@ -133,7 +133,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -154,7 +154,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -175,7 +175,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -196,7 +196,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -217,7 +217,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -238,7 +238,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -259,7 +259,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 109
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -280,7 +280,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -301,7 +301,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 145
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -322,7 +322,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 163
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -343,7 +343,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 181
-        y: 91
+        y: 109
         width: 16
         height: 16
       alignment: 9
@@ -364,6 +364,27 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
+        y: 109
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkateboardingKid.idle.000
+      rect:
+        serializedVersion: 2
+        x: 1
         y: 91
         width: 16
         height: 16
@@ -381,32 +402,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KidSkateboardingOnTheSidewalks.idle.000
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 73
-        width: 16
-        height: 16
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00000000000000000800000000000000
-      internalID: 0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: KidSkateboardingOnTheSidewalks.idle.001
+      name: SkateboardingKid.idle.001
       rect:
         serializedVersion: 2
         x: 19
-        y: 73
+        y: 91
         width: 16
         height: 16
       alignment: 9
@@ -427,7 +427,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 73
+        y: 91
         width: 16
         height: 16
       alignment: 9
@@ -448,7 +448,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 73
+        y: 91
         width: 16
         height: 16
       alignment: 9
@@ -469,7 +469,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 73
+        y: 91
         width: 16
         height: 16
       alignment: 9
@@ -490,7 +490,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 73
+        y: 91
         width: 16
         height: 16
       alignment: 9
@@ -511,7 +511,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 109
-        y: 73
+        y: 91
         width: 16
         height: 16
       alignment: 9
@@ -532,7 +532,91 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 73
+        y: 91
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZeusTheBull.idle.000
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 91
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZeusTheBull.idle.001
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 91
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHarvester.idle.000
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 91
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHarvester.idle.001
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 91
         width: 16
         height: 16
       alignment: 9
@@ -552,7 +636,7 @@ TextureImporter:
       name: Harrot.dead.000
       rect:
         serializedVersion: 2
-        x: 145
+        x: 1
         y: 73
         width: 16
         height: 16
@@ -573,7 +657,7 @@ TextureImporter:
       name: Orn.dead.000
       rect:
         serializedVersion: 2
-        x: 163
+        x: 19
         y: 73
         width: 16
         height: 16
@@ -594,7 +678,7 @@ TextureImporter:
       name: Okonut.dead.000
       rect:
         serializedVersion: 2
-        x: 181
+        x: 37
         y: 73
         width: 16
         height: 16
@@ -615,7 +699,7 @@ TextureImporter:
       name: Auli.dead.000
       rect:
         serializedVersion: 2
-        x: 199
+        x: 55
         y: 73
         width: 16
         height: 16
@@ -636,8 +720,8 @@ TextureImporter:
       name: BigJoe.dead.000
       rect:
         serializedVersion: 2
-        x: 1
-        y: 55
+        x: 73
+        y: 73
         width: 16
         height: 16
       alignment: 9
@@ -657,8 +741,8 @@ TextureImporter:
       name: LilEdgar.dead.000
       rect:
         serializedVersion: 2
-        x: 19
-        y: 55
+        x: 91
+        y: 73
         width: 16
         height: 16
       alignment: 9
@@ -675,11 +759,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KidSkateboardingOnTheSidewalks.dead.000
+      name: SkateboardingKid.dead.000
       rect:
         serializedVersion: 2
-        x: 37
-        y: 55
+        x: 109
+        y: 73
         width: 16
         height: 16
       alignment: 9
@@ -699,8 +783,8 @@ TextureImporter:
       name: StompingKid.dead.000
       rect:
         serializedVersion: 2
-        x: 55
-        y: 55
+        x: 127
+        y: 73
         width: 16
         height: 16
       alignment: 9
@@ -720,8 +804,8 @@ TextureImporter:
       name: Worm.dead.000
       rect:
         serializedVersion: 2
-        x: 73
-        y: 55
+        x: 145
+        y: 73
         width: 16
         height: 16
       alignment: 9
@@ -741,8 +825,50 @@ TextureImporter:
       name: Chicken.dead.000
       rect:
         serializedVersion: 2
-        x: 91
-        y: 55
+        x: 163
+        y: 73
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZeusTheBull.dead.000
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 73
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHarvester.dead.000
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 73
         width: 16
         height: 16
       alignment: 9
@@ -762,7 +888,7 @@ TextureImporter:
       name: Harrot.buried.000
       rect:
         serializedVersion: 2
-        x: 109
+        x: 1
         y: 55
         width: 16
         height: 16
@@ -783,7 +909,7 @@ TextureImporter:
       name: Orn.buried.000
       rect:
         serializedVersion: 2
-        x: 127
+        x: 19
         y: 55
         width: 16
         height: 16
@@ -804,7 +930,7 @@ TextureImporter:
       name: Okonut.buried.000
       rect:
         serializedVersion: 2
-        x: 145
+        x: 37
         y: 55
         width: 16
         height: 16
@@ -825,7 +951,7 @@ TextureImporter:
       name: Auli.buried.000
       rect:
         serializedVersion: 2
-        x: 163
+        x: 55
         y: 55
         width: 16
         height: 16
@@ -846,7 +972,7 @@ TextureImporter:
       name: BigJoe.buried.000
       rect:
         serializedVersion: 2
-        x: 181
+        x: 73
         y: 55
         width: 16
         height: 16
@@ -867,7 +993,7 @@ TextureImporter:
       name: LilEdgar.buried.000
       rect:
         serializedVersion: 2
-        x: 199
+        x: 91
         y: 55
         width: 16
         height: 16
@@ -885,11 +1011,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KidSkateboardingOnTheSidewalks.buried.000
+      name: SkateboardingKid.buried.000
       rect:
         serializedVersion: 2
-        x: 1
-        y: 37
+        x: 109
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -909,8 +1035,8 @@ TextureImporter:
       name: StompingKid.buried.000
       rect:
         serializedVersion: 2
-        x: 19
-        y: 37
+        x: 127
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -930,8 +1056,8 @@ TextureImporter:
       name: Worm.buried.000
       rect:
         serializedVersion: 2
-        x: 37
-        y: 37
+        x: 145
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -951,8 +1077,50 @@ TextureImporter:
       name: Chicken.buried.000
       rect:
         serializedVersion: 2
-        x: 55
-        y: 37
+        x: 163
+        y: 55
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZeusTheBull.buried.000
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 55
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHarvester.buried.000
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 55
         width: 16
         height: 16
       alignment: 9
@@ -972,7 +1140,7 @@ TextureImporter:
       name: Harrot.dance.000
       rect:
         serializedVersion: 2
-        x: 73
+        x: 1
         y: 37
         width: 16
         height: 16
@@ -993,7 +1161,7 @@ TextureImporter:
       name: Harrot.dance.001
       rect:
         serializedVersion: 2
-        x: 91
+        x: 19
         y: 37
         width: 16
         height: 16
@@ -1014,7 +1182,7 @@ TextureImporter:
       name: Harrot.dance.002
       rect:
         serializedVersion: 2
-        x: 109
+        x: 37
         y: 37
         width: 16
         height: 16
@@ -1035,7 +1203,7 @@ TextureImporter:
       name: Orn.dance.000
       rect:
         serializedVersion: 2
-        x: 127
+        x: 55
         y: 37
         width: 16
         height: 16
@@ -1056,7 +1224,7 @@ TextureImporter:
       name: Orn.dance.001
       rect:
         serializedVersion: 2
-        x: 145
+        x: 73
         y: 37
         width: 16
         height: 16
@@ -1077,7 +1245,7 @@ TextureImporter:
       name: Orn.dance.002
       rect:
         serializedVersion: 2
-        x: 163
+        x: 91
         y: 37
         width: 16
         height: 16
@@ -1098,7 +1266,7 @@ TextureImporter:
       name: Okonut.dance.000
       rect:
         serializedVersion: 2
-        x: 181
+        x: 109
         y: 37
         width: 16
         height: 16
@@ -1119,7 +1287,7 @@ TextureImporter:
       name: Okonut.dance.001
       rect:
         serializedVersion: 2
-        x: 199
+        x: 127
         y: 37
         width: 16
         height: 16
@@ -1140,8 +1308,8 @@ TextureImporter:
       name: Okonut.dance.002
       rect:
         serializedVersion: 2
-        x: 1
-        y: 19
+        x: 145
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -1161,8 +1329,8 @@ TextureImporter:
       name: Auli.dance.000
       rect:
         serializedVersion: 2
-        x: 19
-        y: 19
+        x: 163
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -1182,8 +1350,8 @@ TextureImporter:
       name: Auli.dance.001
       rect:
         serializedVersion: 2
-        x: 37
-        y: 19
+        x: 181
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -1203,8 +1371,8 @@ TextureImporter:
       name: Auli.dance.002
       rect:
         serializedVersion: 2
-        x: 55
-        y: 19
+        x: 199
+        y: 37
         width: 16
         height: 16
       alignment: 9
@@ -1224,7 +1392,7 @@ TextureImporter:
       name: BigJoe.dance.000
       rect:
         serializedVersion: 2
-        x: 73
+        x: 1
         y: 19
         width: 16
         height: 16
@@ -1245,7 +1413,7 @@ TextureImporter:
       name: BigJoe.dance.001
       rect:
         serializedVersion: 2
-        x: 91
+        x: 19
         y: 19
         width: 16
         height: 16
@@ -1266,7 +1434,7 @@ TextureImporter:
       name: BigJoe.dance.002
       rect:
         serializedVersion: 2
-        x: 109
+        x: 37
         y: 19
         width: 16
         height: 16
@@ -1287,7 +1455,7 @@ TextureImporter:
       name: LilEdgar.dance.000
       rect:
         serializedVersion: 2
-        x: 127
+        x: 55
         y: 19
         width: 16
         height: 16
@@ -1308,7 +1476,7 @@ TextureImporter:
       name: LilEdgar.dance.001
       rect:
         serializedVersion: 2
-        x: 145
+        x: 73
         y: 19
         width: 16
         height: 16
@@ -1329,6 +1497,90 @@ TextureImporter:
       name: LilEdgar.dance.002
       rect:
         serializedVersion: 2
+        x: 91
+        y: 19
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkateboardingKid.dance.000
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 19
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkateboardingKid.dance.001
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 19
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkateboardingKid.dance.002
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 19
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StompingKid.dance.000
+      rect:
+        serializedVersion: 2
         x: 163
         y: 19
         width: 16
@@ -1347,7 +1599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KidSkateboardingOnTheSidewalks.dance.000
+      name: StompingKid.dance.001
       rect:
         serializedVersion: 2
         x: 181
@@ -1368,7 +1620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KidSkateboardingOnTheSidewalks.dance.001
+      name: StompingKid.dance.002
       rect:
         serializedVersion: 2
         x: 199
@@ -1389,7 +1641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: KidSkateboardingOnTheSidewalks.dance.002
+      name: Worm.dance.000
       rect:
         serializedVersion: 2
         x: 1
@@ -1410,7 +1662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StompingKid.dance.000
+      name: Worm.dance.001
       rect:
         serializedVersion: 2
         x: 19
@@ -1431,7 +1683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StompingKid.dance.001
+      name: Worm.dance.002
       rect:
         serializedVersion: 2
         x: 37
@@ -1452,7 +1704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StompingKid.dance.002
+      name: Chicken.dance.000
       rect:
         serializedVersion: 2
         x: 55
@@ -1473,7 +1725,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm.dance.000
+      name: Chicken.dance.001
       rect:
         serializedVersion: 2
         x: 73
@@ -1494,7 +1746,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm.dance.001
+      name: Chicken.dance.002
       rect:
         serializedVersion: 2
         x: 91
@@ -1515,7 +1767,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Worm.dance.002
+      name: ZeusTheBull.dance.000
       rect:
         serializedVersion: 2
         x: 109
@@ -1536,7 +1788,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken.dance.000
+      name: ZeusTheBull.dance.001
       rect:
         serializedVersion: 2
         x: 127
@@ -1557,7 +1809,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken.dance.001
+      name: ZeusTheBull.dance.002
       rect:
         serializedVersion: 2
         x: 145
@@ -1578,10 +1830,52 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken.dance.002
+      name: TheHarvester.dance.000
       rect:
         serializedVersion: 2
         x: 163
+        y: 1
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHarvester.dance.001
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00000000000000000800000000000000
+      internalID: 0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheHarvester.dance.002
+      rect:
+        serializedVersion: 2
+        x: 199
         y: 1
         width: 16
         height: 16
@@ -1609,78 +1903,99 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BigJoe.dance.000: 0
       Harrot.dance.000: 0
       Auli.dance.000: 0
       Auli.idle.001: 0
-      LilEdgar.dance.002: 0
-      KidSkateboardingOnTheSidewalks.idle.001: 0
-      Orn.dance.001: 0
-      Worm.dance.000: 0
       Worm.idle.001: 0
       Okonut.dance.000: 0
-      StompingKid.dance.000: 0
-      Worm.dead.000: 0
-      Worm.dance.001: 0
       StompingKid.dance.001: 0
-      Worm.idle.000: 0
+      ZeusTheBull.idle.001: 0
       Chicken.buried.000: 0
-      Worm.buried.000: 0
-      LilEdgar.dance.001: 0
+      ZeusTheBull.dead.000: 0
       BigJoe.dance.001: 0
-      Okonut.idle.000: 0
       KidSkateboardingOnTheSidewalks.dance.001: 0
       Harrot.idle.000: 0
-      LilEdgar.idle.001: 0
-      StompingKid.dead.000: 0
-      Chicken.dance.001: 0
       Harrot.dance.002: 0
       KidSkateboardingOnTheSidewalks.dance.000: 0
       Harrot.dead.000: 0
-      StompingKid.buried.000: 0
+      TheHarvester.idle.001: 0
+      SkateboardingKid.idle.001: 0
+      TheHarvester.dead.000: 0
       KidSkateboardingOnTheSidewalks.idle.000: 0
-      Arhot.idle.000: 7563860488027033756
-      StompingKid.dance.002: 0
-      LilEdgar.dance.000: 0
-      Chicken.dance.000: 0
-      BigJoe.dance.002: 0
-      BigJoe.idle.001: 0
       Chicken.dance.002: 0
+      LilEdgar.dance.000: 0
+      BigJoe.idle.001: 0
+      ZeusTheBull.dance.002: 0
       LilEdgar.dead.000: 0
       Orn.dead.000: 0
       KidSkateboardingOnTheSidewalks.dead.000: 0
       Okonut.idle.001: 0
+      SkateboardingKid.dance.002: 0
+      SkateboardingKid.buried.000: 0
       Okonut.dance.001: 0
       StompingKid.idle.000: 0
       Orn.dance.002: 0
       Okonut.dead.000: 0
       Auli.dance.001: 0
+      TheHarvester.dance.002: 0
       Orn.idle.000: -1452925125895407409
-      Auli.buried.000: 0
       BigJoe.dead.000: 0
       Okonut.buried.000: 0
+      Harrot.idle.001: 0
+      TheHarvester.dance.000: 0
+      LilEdgar.buried.000: 0
+      TheHarvester.buried.000: 0
+      Harrot.dance.001: 0
+      KidSkateboardingOnTheSidewalks.dance.002: 0
+      BigJoe.idle.000: 0
+      SkateboardingKid.dance.000: 0
+      Auli.idle.000: 0
+      LilEdgar.dance.002: 0
+      Auli.dance.002: 0
+      ZeusTheBull.dance.000: 0
+      BigJoe.dance.000: 0
+      KidSkateboardingOnTheSidewalks.idle.001: 0
+      Orn.dance.001: 0
+      StompingKid.dance.000: 0
+      Worm.dead.000: 0
+      Worm.dance.001: 0
+      SkateboardingKid.idle.000: 0
+      SkateboardingKid.dead.000: 0
+      Worm.idle.000: 0
+      LilEdgar.dance.001: 0
+      Worm.buried.000: 0
+      Okonut.idle.000: 0
+      ZeusTheBull.buried.000: 0
+      LilEdgar.idle.001: 0
+      StompingKid.dead.000: 0
+      Chicken.dance.001: 0
+      StompingKid.buried.000: 0
+      Arhot.idle.000: 7563860488027033756
+      StompingKid.dance.002: 0
+      Chicken.dance.000: 0
+      BigJoe.dance.002: 0
+      ZeusTheBull.idle.000: 0
+      Auli.buried.000: 0
       StompingKid.idle.001: 0
       Harrot.buried.000: 0
       Orn.buried.000: 0
       LilEdgar.idle.000: 0
       Chicken.idle.000: 0
       KidSkateboardingOnTheSidewalks.buried.000: 0
-      Harrot.idle.001: 0
+      TheHarvester.dance.001: 0
+      ZeusTheBull.dance.001: 0
       Orn.dance.000: 0
       Auli.dead.000: 0
-      LilEdgar.buried.000: 0
       Orn.idle.001: -2826567619375937184
-      Chicken.dead.000: 0
       Worm.dance.002: 0
+      Chicken.dead.000: 0
       BigJoe.buried.000: 0
+      TheHarvester.idle.000: 0
       Arhot.idle.001: 4204086030389198455
-      Harrot.dance.001: 0
-      KidSkateboardingOnTheSidewalks.dance.002: 0
+      SkateboardingKid.dance.001: 0
       Chicken.idle.001: 0
-      BigJoe.idle.000: 0
       Okonut.dance.002: 0
-      Auli.idle.000: 0
-      Auli.dance.002: 0
+      Worm.dance.000: 0
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

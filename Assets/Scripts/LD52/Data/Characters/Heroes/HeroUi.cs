@@ -9,17 +9,18 @@ using Utils.Extensions;
 namespace LD52.Data.Characters.Heroes {
 	[RequireComponent(typeof(TargetSelectionUi))]
 	public class HeroUi : MonoBehaviour, ICharacterUi {
-		[SerializeField] protected TargetSelectionUi   _targetSelection;
-		[SerializeField] protected CharacterPortraitUi _portrait;
-		[SerializeField] protected CharacterBarUi      _barUi;
-		[SerializeField] protected TMP_Text            _heroName;
-		[SerializeField] protected RectTransform       _discardCardParent;
-		[SerializeField] protected SimpleCardUi        _discardTopCard;
-		[SerializeField] protected RectTransform       _stackCardParent;
-		[SerializeField] protected RectTransform[]     _optionParents;
-		[SerializeField] protected SimpleCardUi[]      _optionCards;
-		[SerializeField] protected Hero                _hero;
-		[SerializeField] protected float               _cardMovementSpeed = 2;
+		[SerializeField] protected TargetSelectionUi    _targetSelection;
+		[SerializeField] protected CharacterPortraitUi  _portrait;
+		[SerializeField] protected CharacterBarUi       _barUi;
+		[SerializeField] protected CharacterModifiersUi _modifiers;
+		[SerializeField] protected TMP_Text             _heroName;
+		[SerializeField] protected RectTransform        _discardCardParent;
+		[SerializeField] protected SimpleCardUi         _discardTopCard;
+		[SerializeField] protected RectTransform        _stackCardParent;
+		[SerializeField] protected RectTransform[]      _optionParents;
+		[SerializeField] protected SimpleCardUi[]       _optionCards;
+		[SerializeField] protected Hero                 _hero;
+		[SerializeField] protected float                _cardMovementSpeed = 2;
 
 		public  TargetSelectionUi   targetSelection => _targetSelection ? _targetSelection : _targetSelection = GetComponent<TargetSelectionUi>();
 		private Hero                hero            => _hero;
@@ -38,6 +39,7 @@ namespace LD52.Data.Characters.Heroes {
 			_hero = hero;
 			if (!_hero) return;
 			portrait.Set(_hero.character);
+			_modifiers.Set(hero.character);
 			_heroName.text = _hero.displayName;
 			for (var i = 0; i < _optionParents.Length; ++i) {
 				_optionCards[i].transform.SetParent(_stackCardParent);

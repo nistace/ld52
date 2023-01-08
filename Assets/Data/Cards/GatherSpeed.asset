@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GatherSpeed
   m_EditorClassIdentifier: 
   _displayName: Gathering Speed
-  _iconName: gatheringSpeed
+  _iconName: gatherSpeed
   _description: 
   _action: 3
   _additionModifiers: 0

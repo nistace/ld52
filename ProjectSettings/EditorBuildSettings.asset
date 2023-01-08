@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Roguelike.unity
     guid: 6016cee635355624eb6c8ce3353a6acf
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 4646c980e9a2c8c4a842c89a15dc00b6
   m_configObjects: {}

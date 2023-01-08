@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8798241365555037536}
   - component: {fileID: 8798241365555037537}
   m_Layer: 0
-  m_Name: KidSkateboardingOnTheSidewalk
+  m_Name: SkateboardingKid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695dc58a90c64aeb839144f6c7eee54d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _portraitName: KidSkateboardingOnTheSidewalks
-  _displayName: Kid Skateboarding on the Sidewalks
+  _portraitName: SkateboardingKid
+  _displayName: Skateboarding Kid
   _attributeSet:
-    _values: 050000000000000002000000
+    _values: 050000000100000003000000
   _characterModifiers: 0
   _health: 0
   _armor: 0
@@ -67,8 +67,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _character: {fileID: 8798241365555037536}
   _actions:
-  - {fileID: 11400000, guid: 0bff63e59d9bfaa41bd9185b69e7191e, type: 2}
-  - {fileID: 11400000, guid: 28a6e506b0c71c2498eac65aae536e93, type: 2}
   - {fileID: 11400000, guid: 2b9ea2f5b29784c4e8656e429b881bd3, type: 2}
+  - {fileID: 11400000, guid: 8139dd64894ae27438778d6584989070, type: 2}
+  - {fileID: 11400000, guid: fa2860f7503a4464ba17511e8f29b993, type: 2}
+  - {fileID: 11400000, guid: 28a6e506b0c71c2498eac65aae536e93, type: 2}
   _nextActionIndex: 0
   _upcomingActionTargets: []

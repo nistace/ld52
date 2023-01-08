@@ -244,6 +244,7 @@ MonoBehaviour:
   _targetSelection: {fileID: 4978024943614801525}
   _portrait: {fileID: 4822617196711089096}
   _barUi: {fileID: 3912297113034747675}
+  _modifiers: {fileID: 4255496364866688723}
   _heroName: {fileID: 2364655000200525691}
   _discardCardParent: {fileID: 3291085074048429723}
   _discardTopCard: {fileID: 5468608443275675131}
@@ -1151,6 +1152,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41dee9fbaeed4b66ad94c39d7f5a5b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4255496364866688723 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5375820609218793942, guid: 5d8489410b07e0b4f8ba3ffca9933433, type: 3}
+  m_PrefabInstance: {fileID: 8184253529849693957}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36308d24a04919d43b6ea05d426e623a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4822617196711089096 stripped

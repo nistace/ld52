@@ -42,6 +42,7 @@ namespace LD52.Data.Cards {
 		public CharacterModifiers      forbiddenModifiers => _forbiddenModifiers;
 		public int                     manaCost           => _manaCost;
 		public CharacterModifiers      additionModifiers  => _additionModifiers;
+		public CharacterModifiers      removedModifiers   => _removedModifiers;
 		public CardEffectAnimationData animationData      => _animationData;
 
 		public int GetStrength(IReadCharacterAttributeSet attributeSet) => attributeSet[_attribute] * _attributeMultiplier + _constantStrength;

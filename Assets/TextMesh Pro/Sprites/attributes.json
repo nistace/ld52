@@ -18,7 +18,7 @@
     "duration": 100
    },
    {
-    "filename": "attaclk",
+    "filename": "attack",
     "frame": { "x": 37, "y": 1, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -45,7 +45,7 @@
     "duration": 100
    },
    {
-    "filename": "modifier_confused",
+    "filename": "modifier_stinging",
     "frame": { "x": 91, "y": 1, "w": 16, "h": 16 },
     "rotated": false,
     "trimmed": false,
@@ -66,10 +66,10 @@
   "layers": [
    { "name": "health", "opacity": 255, "blendMode": "normal" },
    { "name": "mana", "opacity": 255, "blendMode": "normal" },
-   { "name": "attaclk", "opacity": 255, "blendMode": "normal" },
+   { "name": "attack", "opacity": 255, "blendMode": "normal" },
    { "name": "modifier_buried", "opacity": 255, "blendMode": "normal" },
    { "name": "modifier_poisoned", "opacity": 255, "blendMode": "normal" },
-   { "name": "modifier_confused", "opacity": 255, "blendMode": "normal" }
+   { "name": "modifier_stinging", "opacity": 255, "blendMode": "normal" }
   ],
   "slices": [
   ]

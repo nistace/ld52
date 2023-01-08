@@ -41,7 +41,8 @@ namespace LD52.Scenes.GameScene {
 			CardZoomUi.SetEnabled(false);
 			// TODO HANDLE OUTRO
 			yield return new WaitForSeconds(1);
-			ChangeStateToNextOutroStep(null);
+			if (game.playerHeroes.All(t => t.character.dead)) ChangeState(GameOverGameState.state);
+			else ChangeStateToNextOutroStep(null);
 		}
 
 		private IEnumerator StartTurn() {
@@ -58,6 +59,11 @@ namespace LD52.Scenes.GameScene {
 
 			foreach (var hero in game.playerHeroes) {
 				hero.character.RefreshModifiersForNewTurn();
+			}
+
+			if (IsGameOver()) {
+				CoroutineRunner.Run(PlayOutro());
+				yield break;
 			}
 
 			foreach (var opponent in game.opponentTeam.opponents.Where(t => !t.character.dead)) {

@@ -203,7 +203,7 @@ MonoBehaviour:
   _attribute: 1
   _attributeMultiplier: 1
   _constantStrength: 0
-  _level: 1
+  _level: 2
   _attributeBonus:
     _attribute: 1
     _value: 1

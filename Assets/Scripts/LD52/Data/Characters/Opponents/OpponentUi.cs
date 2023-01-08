@@ -22,11 +22,11 @@ namespace LD52.Data.Characters.Opponents {
 		[SerializeField] protected RectTransform       _targetArrowAnchor;
 		[SerializeField] protected TargetArrowUi       _targetArrowPrefab;
 
-		private Opponent            opponent          => _opponent;
-		private List<TargetArrowUi> targetArrows      { get; } = new List<TargetArrowUi>();
-		public  TargetSelectionUi   targetSelection   => _targetSelection ? _targetSelection : _targetSelection = GetComponent<TargetSelectionUi>();
-		public CharacterPortraitUi portrait          => _portrait ? _portrait : _portrait = GetComponent<CharacterPortraitUi>();
-		public  Vector2             position => portrait.transform.position;
+		private Opponent            opponent        => _opponent;
+		private List<TargetArrowUi> targetArrows    { get; } = new List<TargetArrowUi>();
+		public  TargetSelectionUi   targetSelection => _targetSelection ? _targetSelection : _targetSelection = GetComponent<TargetSelectionUi>();
+		public  CharacterPortraitUi portrait        => _portrait ? _portrait : _portrait = GetComponent<CharacterPortraitUi>();
+		public  Vector2             position        => portrait.transform.position;
 
 		public void Set(Opponent opponent) {
 			if (_opponent) _opponent.onUpcomingActionChanged.RemoveListener(RefreshUpcomingAction);
@@ -48,6 +48,8 @@ namespace LD52.Data.Characters.Opponents {
 
 		private void HandleHealthChanged() {
 			if (!_opponent) return;
+			_arrow.gameObject.SetActive(opponent.character.alive && !opponent.actionDone);
+			_arrow.SetParent(_cardArrowAnchors[opponent.nextActionIndex]);
 			if (opponent.character.dead || opponent.actionDone) {
 				targetArrows.ForEach(t => t.Hide());
 			}

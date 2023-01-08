@@ -33,6 +33,7 @@ namespace LD52.Scenes.GameScene {
 			// TODO HANDLE INTRO
 			yield return new WaitForSeconds(1);
 			CardZoomUi.instanceEnabled = true;
+			CardZoomUi.equippedInfoVisible = false;
 			yield return CoroutineRunner.Run(StartTurn());
 		}
 

@@ -1,7 +1,6 @@
-﻿using System.Collections;
+﻿using LD52.Data.Cards;
 using LD52.Data.Games;
-using UnityEngine;
-using Utils.Coroutines;
+using Utils.Extensions;
 
 namespace LD52.Scenes.GameScene {
 	public class GetCardsGameState : AbstractGameState {
@@ -9,17 +8,22 @@ namespace LD52.Scenes.GameScene {
 		private GetCardsGameState() { }
 
 		protected override void Enable() {
+			ui.loot.Set(game.GenerateBoosters());
 			ui.Show(GameUi.Panel.GetCards);
-			// TODO GET CARDS
-			Debug.Log("GetCardsGameState");
-			CoroutineRunner.Run(AndContinue());
+
+			CardZoomUi.instanceEnabled = true;
+			CardZoomUi.equippedInfoVisible = true;
+
+			BoosterUi.onBoosterClicked.AddListenerOnce(GetCards);
 		}
 
-		private static IEnumerator AndContinue() {
-			yield return new WaitForSeconds(.5f);
+		private static void GetCards((Card, Card) booster) {
+			game.ObtainCards(booster);
 			ChangeStateToNextOutroStep(ScenarioStepReward.Card);
 		}
 
-		protected override void Disable() { }
+		protected override void Disable() {
+			BoosterUi.onBoosterClicked.RemoveListener(GetCards);
+		}
 	}
 }

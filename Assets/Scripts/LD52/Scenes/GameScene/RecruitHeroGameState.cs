@@ -1,11 +1,12 @@
 ﻿using System.Linq;
+using LD52.Data.Cards;
 using LD52.Data.Characters.Heroes;
 using LD52.Data.Games;
 using Utils.Extensions;
 
 namespace LD52.Scenes.GameScene {
 	public class RecruitHeroGameState : AbstractGameState {
-		public static RecruitHeroGameState state     { get; } = new RecruitHeroGameState();
+		public static RecruitHeroGameState state { get; } = new RecruitHeroGameState();
 
 		private RecruitHeroGameState() { }
 
@@ -20,6 +21,9 @@ namespace LD52.Scenes.GameScene {
 			randomHeroes.Shuffle();
 			ui.recruit.Set(randomHeroes[0], randomHeroes.Length > 1 ? randomHeroes[1] : null);
 			ui.Show(GameUi.Panel.RecruitHero);
+
+			CardZoomUi.instanceEnabled = true;
+			CardZoomUi.equippedInfoVisible = true;
 
 			RecruitHeroUi.onRecruit.AddListenerOnce(RecruitHero);
 		}

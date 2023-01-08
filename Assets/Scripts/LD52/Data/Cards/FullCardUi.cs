@@ -15,6 +15,10 @@ namespace LD52.Data.Cards {
 		[SerializeField] protected Image    _targetIcon;
 		[SerializeField] protected TMP_Text _manaCostText;
 		[SerializeField] protected TMP_Text _description;
+		[SerializeField] protected TMP_Text _equippedInfo;
+		[SerializeField] protected bool     _showEquippedInfo;
+
+		private void Start() => SetEquippedInfoVisible(_showEquippedInfo);
 
 		public void Set(Card card, GenericCharacter cardOwner) {
 			_cardActionIcon.sprite = card.icon;
@@ -23,6 +27,12 @@ namespace LD52.Data.Cards {
 			_targetIcon.sprite = AssetLibrary.cardSheet[$"target_{card.target.ToString().ToLowerFirst()}.default.000"];
 			_manaCostText.text = $"<sprite name=mana> {card.manaCost}";
 			_description.text = card.description;
+			_equippedInfo.text = card.attributeBonus.value > 0 ? $"Equipped: <sprite name={card.attributeBonus.attribute.ToString().ToLowerFirst()}> +{card.attributeBonus.value}" : string.Empty;
+		}
+
+		public void SetEquippedInfoVisible(bool visible) {
+			_showEquippedInfo = visible;
+			_equippedInfo.enabled = _showEquippedInfo;
 		}
 	}
 }

@@ -197,7 +197,7 @@ MonoBehaviour:
   _level: 2
   _attributeBonus:
     _attribute: 2
-    _value: 1
+    _value: 0
   _manaCost: 1
   _targetMustBeAlive: 1
   _requiredModifiers: 0

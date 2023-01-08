@@ -6,6 +6,10 @@ namespace LD52.Data.Cards {
 	public class CardZoomUi : MonoBehaviour {
 		private static CardZoomUi instance { get; set; }
 
+		public static bool equippedInfoVisible {
+			set => instance._cardUi.SetEquippedInfoVisible(value);
+		}
+
 		public static bool instanceEnabled {
 			get => instance.enabled;
 			set => instance.enabled = value;

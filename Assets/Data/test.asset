@@ -17,8 +17,13 @@ MonoBehaviour:
   - {fileID: 4971716009884228050, guid: f55bcf4e6e1a48b4ca39cc28f85c3771, type: 3}
   - {fileID: 4971716009884228050, guid: 7da0b558274459b428a8a1c582ddffb8, type: 3}
   - {fileID: 4971716009884228050, guid: b2877c4ef1b89ae4cb7a85d107241db3, type: 3}
+  _firstHero: {fileID: 4971716009884228050, guid: 5c0e29128384eae47a493d6f89503dae, type: 3}
   _scenarioSteps:
   - _startWithHeroInventory: 0
+    _opponentPrefabs:
+    - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
+    _reward: 2
+  - _startWithHeroInventory: 1
     _opponentPrefabs:
     - {fileID: 8798241365555037537, guid: 5579f08e302e9b244920f13b57e27005, type: 3}
     - {fileID: 8798241365555037537, guid: a68e2c49834c5b54c8fcd248a379a9f2, type: 3}
@@ -29,3 +34,17 @@ MonoBehaviour:
     - {fileID: 8798241365555037537, guid: c0eec097cfe720b4e964c21d1b802dc9, type: 3}
     - {fileID: 8798241365555037537, guid: a68e2c49834c5b54c8fcd248a379a9f2, type: 3}
     _reward: 0
+  _lootCards:
+  - {fileID: 11400000, guid: 243a479197cd58541979ae04b5c2dae4, type: 2}
+  - {fileID: 11400000, guid: d6dd964e17e1ccb4d8ceee37d5ff7168, type: 2}
+  - {fileID: 11400000, guid: 589cb16e1872742429537f07265a8ff0, type: 2}
+  - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
+  - {fileID: 11400000, guid: 6dcd4be4e1d06224d8d5243fa9319076, type: 2}
+  - {fileID: 11400000, guid: d803e16f27b595f49be84b180cefcb33, type: 2}
+  - {fileID: 11400000, guid: 190892d12048579409e63529a935b06e, type: 2}
+  - {fileID: 11400000, guid: fa2860f7503a4464ba17511e8f29b993, type: 2}
+  - {fileID: 11400000, guid: 492e7bc01aafb334ebb798ade79b8061, type: 2}
+  - {fileID: 11400000, guid: 536aa3fb14a7c254aade76b9ff1582b3, type: 2}
+  - {fileID: 11400000, guid: f36a630a7badab640ac754a93354507e, type: 2}
+  - {fileID: 11400000, guid: 1e861cb1f6442c245a2e2a6a656740f2, type: 2}
+  - {fileID: 11400000, guid: be06c14b77d63c74e8c5ddb504326099, type: 2}

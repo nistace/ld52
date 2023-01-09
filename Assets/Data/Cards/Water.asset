@@ -158,11 +158,11 @@ MonoBehaviour:
   _attribute: 1
   _attributeMultiplier: 0
   _constantStrength: 3
-  _level: 2
+  _level: 3
   _attributeBonus:
     _attribute: 2
     _value: 1
   _manaCost: 1
   _targetMustBeAlive: 1
   _requiredModifiers: 0
-  _forbiddenModifiers: 1
+  _forbiddenModifiers: 0

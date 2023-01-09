@@ -49,12 +49,13 @@ MonoBehaviour:
   _defaultCards:
   - {fileID: 11400000, guid: f36a630a7badab640ac754a93354507e, type: 2}
   - {fileID: 11400000, guid: f36a630a7badab640ac754a93354507e, type: 2}
-  - {fileID: 11400000, guid: 6dcd4be4e1d06224d8d5243fa9319076, type: 2}
-  - {fileID: 11400000, guid: be06c14b77d63c74e8c5ddb504326099, type: 2}
+  - {fileID: 11400000, guid: f36a630a7badab640ac754a93354507e, type: 2}
+  - {fileID: 11400000, guid: 492e7bc01aafb334ebb798ade79b8061, type: 2}
   - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
   - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
   - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
   - {fileID: 11400000, guid: 72eca856ea338f543b7005731aa89f7f, type: 2}
+  _overridenCards: []
   _deck:
     _cards: []
     _stack: []
@@ -75,7 +76,7 @@ MonoBehaviour:
   _portraitName: Okonut
   _displayName: Okonut
   _attributeSet:
-    _values: 060000000000000001000000
+    _values: 060000000000000002000000
   _characterModifiers: 0
   _health: 0
   _armor: 0

@@ -74,11 +74,11 @@ MonoBehaviour:
     _reward: -1
   - _startWithHeroInventory: 1
     _opponentPrefabs:
-    - {fileID: 8798241365555037537, guid: b85771eee38ea33479d776b288f44bfd, type: 3}
-    - {fileID: 8798241365555037537, guid: 896115ebe662ef542b52bac555eeb31c, type: 3}
-    - {fileID: 8798241365555037537, guid: 2cb58ee1469c25247b41a7fab75efc3c, type: 3}
     - {fileID: 8798241365555037537, guid: c0eec097cfe720b4e964c21d1b802dc9, type: 3}
     - {fileID: 8798241365555037537, guid: 40a74440b9178b94a8a30a0280956f8b, type: 3}
+    - {fileID: 8798241365555037537, guid: 2cb58ee1469c25247b41a7fab75efc3c, type: 3}
+    - {fileID: 8798241365555037537, guid: 896115ebe662ef542b52bac555eeb31c, type: 3}
+    - {fileID: 8798241365555037537, guid: b85771eee38ea33479d776b288f44bfd, type: 3}
     _reward: 0
   _lootCards:
   - {fileID: 11400000, guid: 243a479197cd58541979ae04b5c2dae4, type: 2}

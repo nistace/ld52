@@ -165,4 +165,4 @@ MonoBehaviour:
   _manaCost: 2
   _targetMustBeAlive: 1
   _requiredModifiers: 0
-  _forbiddenModifiers: 1
+  _forbiddenModifiers: 0

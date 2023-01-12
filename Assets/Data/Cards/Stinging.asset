@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _displayName: Stinging
   _iconName: stinging
-  _description: One can only touch with the eyes.
+  _description: '[Deals 2 damage to all incoming attacks, during one turn]'
   _action: 2
   _additionModifiers: 8
   _removedModifiers: 0

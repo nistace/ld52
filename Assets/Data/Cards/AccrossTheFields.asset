@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c629d6e5b934b65b5dc578cfa24578b, type: 3}
   m_Name: AccrossTheFields
   m_EditorClassIdentifier: 
-  _displayName: Accross the Fields
+  _displayName: Across the Fields
   _iconName: accrossTheFields
   _description: 
   _action: 0

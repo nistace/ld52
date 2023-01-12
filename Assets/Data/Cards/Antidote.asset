@@ -155,7 +155,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    _targetColoration: {r: 0, g: 1, b: 0.06589508, a: 1}
+    _targetColoration: {r: 0, g: 1, b: 0, a: 1}
     _colorationCurve:
       serializedVersion: 2
       m_Curve:
@@ -180,7 +180,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    _duration: 1
+    _duration: 0.7
     _casterCharge: 0
   _target: 2
   _attribute: 1

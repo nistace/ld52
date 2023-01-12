@@ -206,8 +206,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    _duration: 0.5
-    _casterCharge: 1
+    _duration: 0.7
+    _casterCharge: 0
   _target: 5
   _attribute: 1
   _attributeMultiplier: 0

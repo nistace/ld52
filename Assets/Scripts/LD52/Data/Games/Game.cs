@@ -25,7 +25,7 @@ namespace LD52.Data.Games {
 
 		public Game(GameData data) {
 			_gameData = data;
-			RecruitHero(_gameData.firstHero);
+			_gameData.startingHeroes.ForEach(RecruitHero);
 			_gameData.initialCardsInReserve.ForEach(_cardReserve.AddCard);
 		}
 
